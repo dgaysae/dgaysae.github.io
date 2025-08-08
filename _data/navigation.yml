@@ -1,12 +1,18 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-    url: /docs/quick-start-guide/
+  #- title: "Quick-Start Guide"
+  ##  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  #  url: /docs/quick-start-guide/
+  #- title: "Blog"
+  #  url: /year-archive/
+  - title: "Programación"
+    url: /mod_prog/intro/
+  - title: "PSP"
+    url: /mod_psp/intro/
+  - title: "PMDM"
+    url: /mod_pmdm/intro/
   - title: "About"
     url: /about/
-  - title: "Blog"
-    url: /year-archive/
   #- title: "Sitemap"
   #  url: /sitemap/
   # - title: "Sample Collections"

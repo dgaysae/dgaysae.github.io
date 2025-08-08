@@ -391,11 +391,11 @@ defaults:
         nav:
           - mod_psp
   # _docs
-  #- scope:
-  #    path: ""
-  #    type: docs
-  #  values:
-  #    layout: single
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
   #    #toc: true
   #    #toc_icon: "heart" 
   #    sidebar:
