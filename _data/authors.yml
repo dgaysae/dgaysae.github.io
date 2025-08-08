@@ -1,0 +1,26 @@
+Diego GS:
+  name        : "Diego Gay Sáez"
+  bio         : "De desarrollador a profesor."
+  avatar      : "/assets/images/diegogaysaez.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:dgaysae524@g.educaand.es"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://dgaysae.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: # "https://twitter.com/extravagantman"
+
+Diego Celia:
+  name        : "Diego Gay Sáez"
+  bio         : "Profesor en el IES Celia Viñas (Almería)"
+  avatar      : "/assets/images/diegogaysaez.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:diego.gay.saez@iescelia.org"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: #"https://twitter.com/rhymeswithsackit"
