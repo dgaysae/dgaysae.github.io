@@ -9,7 +9,7 @@ last_modified_at: 2025-08-07T11:59:26-04:00
 toc: true
 ---
 
-Esta web está dedicada a la programación para los CFGS de **DAM** y **DAW**. La intención se ofrecer material de apoyo tanto a estudiantes como a profesores para facilitar el trabajo en el aula y potenciar su aprendizaje.
+Esta web está dedicada a la programación y otras materias estudiadas en los CFGS de **DAM** y **DAW**. La intención se ofrecer material de apoyo tanto a estudiantes como a profesores para facilitar el trabajo en el aula y potenciar su aprendizaje.
 
 
 ## Sobre mi
