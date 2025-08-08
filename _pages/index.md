@@ -9,7 +9,7 @@ header:
     #- label: "<i class='fas fa-download'></i> Install now"
     #  url: "/docs/quick-start-guide/"
 excerpt: >
-  ¿Necesitas material, ejemplos y ejercicios de programación? ¡Espero que aquí puedas encontrar lo que necesitas!<br />
+  ¿Necesitas material, ejemplos y ejercicios de programación? ¡Espero que esta web te sirva de ayuda!<br />
   <!-- <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3">Latest release v4.27.3</a></small> -->
 feature_row:
   - image_path: /assets/images/Gemini_Generated_Image_fzt5omfzt5omfzt5.jpeg
