@@ -1,12 +1,11 @@
 ---
-title: "Introducción a la programación"
-permalink: /mod_prog/intro/
+title: "Programación Multimedia y Dispositivos Móviles (PMDM)"
+permalink: /mod_pmdm/about/
 excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
 last_modified_at: 2025-08-08T08:48:05-04:00
 redirect_from:
   - /theme-setup/
 toc: true
-toc_title: "Índice"
 #toc_icon: "heart"  
 ---
 

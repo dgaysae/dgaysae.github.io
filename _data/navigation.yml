@@ -6,11 +6,11 @@ main:
   #- title: "Blog"
   #  url: /year-archive/
   - title: "Programación"
-    url: /mod_prog/intro/
+    url: /mod_prog/about/
   - title: "PSP"
-    url: /mod_psp/intro/
+    url: /mod_psp/about/
   - title: "PMDM"
-    url: /mod_pmdm/intro/
+    url: /mod_pmdm/about/
   - title: "About"
     url: /about/
   #- title: "Sitemap"
@@ -21,17 +21,17 @@ main:
 # programacion links
 mod_prog:
   - title: Sobre el módulo
-    url: /mod_prog/intro/
+    url: /mod_prog/about/
 
 # psp links
 mod_psp:
-  - title: Introducción
-    url: /mod_psp/intro/
+  - title: Sobre el módulo
+    url: /mod_psp/about/
 
 # pmdm links
 mod_pmdm:
-  - title: Introducción
-    url: /mod_pmdm/intro/
+  - title: Sobre el módulo
+    url: /mod_pmdm/about/
 
 # documentation links
 docs:
