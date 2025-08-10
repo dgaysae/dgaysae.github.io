@@ -39,6 +39,11 @@ mod_psp:
         url: /mod_psp/about_modulo/
       - title: "Bibliografía y fuentes"
         url: /mod_psp/fuentes_normativa/
+  - title: "Contenido"
+  - title: "UD 01 - Procesos"
+    children:
+      - title: "Introducción"
+        url: /mod_psp/ud01_00_intro/
 
 # pmdm links
 mod_pmdm:
