@@ -20,22 +20,34 @@ main:
 
 # programacion links
 mod_prog:
-  - title: Sobre el módulo
+  - title: "Sobre el módulo"
     url: /mod_prog/about/
 
 # psp links
 mod_psp:
-  - title: Sobre el módulo
-    url: /mod_psp/about/
+  - title: "Sobre el módulo"
+    children:
+      - title: "Introducción"
+        url: /mod_psp/about/
+      - title: "Normativa vigente"
+        url: /mod_psp/normativa/
+      - title: "Sobre el Sistema de FP"
+        url: /mod_psp/about_fp/
+      - title: "Sobre el Ciclo Formativo de DAM"
+        url: /mod_psp/about_ciclo/
+      - title: "Sobre el módulo de PSP"
+        url: /mod_psp/about_modulo/
+      - title: "Bibliografía y fuentes"
+        url: /mod_psp/fuentes_normativa/
 
 # pmdm links
 mod_pmdm:
-  - title: Sobre el módulo
+  - title: "Sobre el módulo"
     url: /mod_pmdm/about/
 
 # documentation links
 docs:
-  - title: Getting Started
+  - title: "Getting Started"
     children:
       - title: "Quick-Start Guide"
         url: /docs/quick-start-guide/
