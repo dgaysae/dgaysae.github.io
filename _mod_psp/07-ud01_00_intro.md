@@ -209,8 +209,8 @@ El **_scheduler_** o **planificador de procesos** es el componente del SO que de
 ## Algoritmos de planificación.
 Los algoritmos más usados son:
 1. **FCFS** (*First-Come, First-Served*): es no apropiativo, donde los PCBs de los procesos listos en memoria se organizan en una cola donde el que antes llega antes usa la CPU. Es poco eficiente si hay procesos que requieren mucho tiempo de CPU.
-1. **SJF** (*Shortest Job First*): algoritmo no apropiativo que manda a ejecutar el proceso que necesita menos tiempo de CPU. En caso de empates usa el FCFS. Los procesos que requieren mucho tiempo de CPU pueden quedar desatendidos.
-1. **SRPT** (*Shortest Remaining Processing Time*): se trata de un SJF apropiativo, que elige el proceso que requiera menos tiempo de CPU para finalizar su ejecución.
+1. **<span id="algoritmo_sjf">SJF</span>** (*Shortest Job First*): algoritmo no apropiativo que manda a ejecutar el proceso que necesita menos tiempo de CPU. En caso de empates usa el FCFS. Los procesos que requieren mucho tiempo de CPU pueden quedar desatendidos.
+1. **<span id="algoritmo_srpt">SRPT</span>** (*Shortest Remaining Processing Time*): se trata de un SJF apropiativo, que elige el proceso que requiera menos tiempo de CPU para finalizar su ejecución.
 El problema radica en conocer de antemano el tiempo que necesitará cada proceso.
 1. **RR** (*Round Robin*): versión apropiativa del FCFS en el que cuando un proceso finaliza su quantum, el planificador lo suspende y lo envía al final de la cola, si no ha terminado. Si lo ha hecho, toma otro proceso.
 
@@ -247,10 +247,16 @@ Para los procesos de la tabla:
 | B       | 1 | 2 |
 | c       | 1 | 1 |
 
-Veamos los cronogramas de ejecución para un algoritmo no apropiativo (SJF) frente a otro apropiativo (SRPT) con quantum q=1, donde:
+Veamos los cronogramas de ejecución para un algoritmo no apropiativo ([SJF](#algoritmo_sjf)) frente a otro apropiativo ([SRPT](#algoritmo_srpt)) con *quantum* q=1, donde:
 -	**E** = Ejecutando
 -	**L** = Listo
 -	**T** = Terminado
+
+|   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A | E | E | E | E | T | T | T | T |
+| B |   | L | L | L | L | E | E | T |
+| C |   | L | L | L | E | T | T | T |
 
 
 # Fuentes
