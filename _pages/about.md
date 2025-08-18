@@ -26,4 +26,4 @@ En la actualidad imparto clases de **Programación** (1º DAM), **Programación 
 
 ---
 
-Esta web ha sido desarrollada y es mantenida por Diego Gay Sáez usando **[Jekyll](https://jekyllrb.com/){:target="_blank"}** y el _theme_ **[Minimal Mistakes](https://mademistakes.com/work/jekyll-themes/minimal-mistakes/){:target="_blank"}** y admite vuestros **comentarios**, **sugerencias** y **contribuciones** :wink: 
+Esta web ha sido desarrollada y es mantenida por Diego Gay Sáez usando **[Jekyll](https://jekyllrb.com/){:target="_blank"}** y el _theme_ **[Minimal Mistakes](https://mademistakes.com/work/jekyll-themes/minimal-mistakes/){:target="_blank"}** y admite vuestros **comentarios**, **sugerencias** y **contribuciones** ;-) 
