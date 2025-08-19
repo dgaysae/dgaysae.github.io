@@ -1,7 +1,7 @@
 ---
 title: "Unidad 01 - Introducción"
-permalink: /mod_psp/ud01_00_intro/
-excerpt: "Procesos e hilos: introducción teórica."
+permalink: /mod_prog/ud01_00_intro/
+excerpt: "Intoducción a la programación."
 last_modified_at: 2025-08-08T08:48:05-04:00
 redirect_from:
   - /theme-setup/

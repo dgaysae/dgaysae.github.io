@@ -7,8 +7,8 @@ main:
   #  url: /year-archive/
   - title: "Programación"
     url: /mod_prog/about/
-  - title: "PSP"
-    url: /mod_psp/about/
+  #- title: "PSP"
+  #  url: /mod_psp/about/
   - title: "PMDM"
     url: /mod_pmdm/about/
   - title: "About"
@@ -20,8 +20,30 @@ main:
 
 # programacion links
 mod_prog:
-  - title: "Sobre el módulo"
+  - title: "Programación"
     url: /mod_prog/about/
+
+  - title: "Normativa"
+    children:
+      - title: "Introducción"
+        url: /mod_prog/about/
+      - title: "Normativa vigente"
+        url: /mod_prog/normativa/
+      - title: "Sobre el Sistema de FP"
+        url: /mod_prog/about_fp/
+      - title: "Sobre el Ciclo Formativo de DAM"
+        url: /mod_prog/about_ciclo/
+      - title: "Sobre el módulo"
+        url: /mod_prog/about_modulo/
+      - title: "Bibliografía y fuentes"
+        url: /mod_prog/fuentes_normativa/
+  - title: "Contenido"
+  #- title: "UD 01 - Introducción"
+  #  children:
+  #    - title: "Introducción"
+  #      url: /mod_prog/ud01_00_intro/
+  #    - title: "Gestión de procesos"
+  #      url: /mod_prog/ud01_01_gestion_ps/
 
 # psp links
 mod_psp:
@@ -44,6 +66,8 @@ mod_psp:
     children:
       - title: "Introducción"
         url: /mod_psp/ud01_00_intro/
+      - title: "Gestión de procesos"
+        url: /mod_psp/ud01_01_gestion_ps/
 
 # pmdm links
 mod_pmdm:
