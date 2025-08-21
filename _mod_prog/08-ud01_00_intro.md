@@ -193,6 +193,18 @@ Para ver todos los sistemas de un vistazo, aquí tienes una tabla de equivalenci
 | 14 | 1110 | 16 | E |
 | 15 | 1111 | 17 | F |
 
+**Ejercicio propuesto**<br> Convierte a octal y hex los siguientes decimales: 42, 27 y 111.
+{: .notice--primary}
+
+**Ejercicio propuesto**<br> Convierte a decimal los siguientes binarios: 1001101, 11100 y 1001001.
+{: .notice--primary}
+
+**Ejercicio propuesto**<br> Convierte a decimal los siguientes octales: 42, 27 y 111.
+{: .notice--primary}
+
+**Ejercicio propuesto**<br> Convierte a decimal los siguientes hex: 4A, FF y 11.
+{: .notice--primary}
+
 ### Código ASCII
 Efectivamente, también las letras pueden representarse en el sistema binario.
 
