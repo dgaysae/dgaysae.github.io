@@ -36,11 +36,11 @@ mod_prog:
         url: /mod_prog/fuentes_normativa/
   - title: "Bibliografía"
     url: /mod_prog/prog_bibliografia/
-  #- title: "Contenido"
-  #- title: "UD 01 - Introducción"
-  #  children:
-  #    - title: "Introducción"
-  #      url: /mod_prog/ud01_00_intro/
+  - title: "Contenido"
+  - title: "UD 01 - Introducción"
+    children:
+      - title: "Introducción"
+        url: /mod_prog/ud01_00_intro/
   #    - title: "Gestión de procesos"
   #      url: /mod_prog/ud01_01_gestion_ps/
 

@@ -11,15 +11,18 @@ toc: true
 
 ---
 
+A continuación se muestran las distintas fuentes documentales (libros, vídeos, webs y artículos) que se recomiendan para seguir el curso.
 
 # Bibliografía
 
 * Vozmediano, A. (s/f). Apuntes de programación en Java para 1º DAM/DAW.
+* González, L. J. S. (s/f). Aprende Java con Ejercicios: Cinturón Blanco (Volumen 1). Comprar en [Amazon](https://www.amazon.es/dp/B0DT3XMF5C){:target="_blank}.
+  * LuisJoseSanchez. (s. f.). **_GitHub - LuisJoseSanchez/aprende-java-con-ejercicios: Ejemplos y soluciones del libro «Aprende Java con Ejercicios»_**. GitHub. <https://github.com/LuisJoseSanchez/aprende-java-con-ejercicios>{:target="_blank}
 
 # Webgrafía
 
 * **The javaTM tutorials**. (s/f). Oracle.com.<br>Recuperado el 19 de agosto de 2025, de <https://docs.oracle.com/javase/tutorial/index.html>{:target="_blank"}
-* (S/f). **Baeldung.com**.<br>Recuperado el 19 de agosto de 2025, de <https://www.baeldung.com/>{:target="_blank"}
+* Baeldung.com. (S/f). **_Get Started with Java_**.<br>Recuperado el 19 de agosto de 2025, de <https://www.baeldung.com/get-started-with-java-series>{:target="_blank"}
 * Dev.Java (s/f). **Dev.Java: The Destination for Java Developers**.<br>Recuperado el 19 de agosto de 2025, de <https://dev.java/>{:target="_blank"}
 
 
