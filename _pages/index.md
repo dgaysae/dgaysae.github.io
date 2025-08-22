@@ -16,7 +16,7 @@ feature_row:
     alt: "Programación"
     title: "Programación"
     excerpt: "Todos los contenidos básicos establecidos para el módulo de Programación del primer curso de DAM o DAW los encontrarás aquí."
-    url: "/mod_prog/intro/"
+    url: "/mod_prog/about/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/Gemini_Generated_Image_tc6wfytc6wfytc6w.jpeg
