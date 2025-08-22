@@ -10,17 +10,17 @@ toc: true
 #toc_icon: "heart"  
 ---
 
-# <span id="intro">Introducción</span>
+# 1. Introducción
 Los ordenadores se han hecho para realizar tareas. Por su naturaleza (electrónica) manejan sólo dos posibles valores:
 
 - **0** cuando no hay señal eléctrica.
 - **1** en caso contrario.
 
-Esta unidad de información que puede tomar dos posibles valores se conoce como **bit**. Es ordenador realiza operaciones manejando bits. Esto lo hace sincronizando sus operaciones y los componentes que las realizan mediante un reloj interno que les envía pulsos. Por eso se dice que el ordenador es una **máquina síncrona**. 
+Esta unidad de información que puede tomar dos posibles valores se conoce como **bit** (_**bi**nary digi**t**_). El ordenador realiza operaciones manejando bits. Esto lo hace sincronizando sus operaciones y los componentes que las realizan mediante un reloj interno que les envía pulsos. Por eso se dice que el ordenador es una **máquina síncrona**. 
 
 El ordenador realiza estas tareas cargándolas en la **memoria principal** a la que accede directamente la CPU, tomando las instrucciones a ejecutar y los datos con los que operar.
 
-## Programa
+## 1.1. Programa
 Estas tareas están definidas en los distintos **programas**. Un programa es un conjunto de instrucciones ordenadas y comprensibles para un ordenador y de datos que pueden usar esas instrucciones, de manera que cuando se ejecutan en el ordenador se obtiene un resultado.
 
 Cada programa tiene como finalidad resolver un problema realizando alguna tarea concreta:
@@ -32,7 +32,7 @@ En general, para que un programa realice su función, debe **comunicarse** de al
 
 Esos datos pueden ser de distinta naturaleza, pero en todos los casos **deben convertirse en datos binarios** para que el ordenador pueda manejarlos.
 
-## Algoritmo
+## 1.2. Algoritmo
 Un algoritmo es un **conjunto ordenado y finito de operaciones** que permiten hallar la solución a un problema. La implementación de algoritmos genera programas que puede ejecutar el ordenador y pueden procesar datos para devolver la solución:
 
 {% capture fig_img00 %}
@@ -44,7 +44,7 @@ Un algoritmo es un **conjunto ordenado y finito de operaciones** que permiten ha
   <figcaption> </figcaption>
 </figure>
 
-### Carecterísticas
+### 1.2.1. Carecterísticas
 Un algoritmo **no debe ser ambiguo** en sus resultados, ya que será la base del algoritmo posterior. Para que un algoritmo produzca un resultado en un **tiempo finito**, debe tener las siguientes características:
 - **Preciso**: establece el orden en que se realizan los pasos de la operación.
 - **Definido**: si se sigue dos o más veces (con los mismos datos), se obtiene siempre el mismo resultado.
@@ -61,24 +61,24 @@ Veamos un ejemplo de algoritmo implementado en lenguaje natural:
 
 Si te fijas en el algoritmo podrás comprobar que cumple todas las características de un algoritmo.
 
-## Codificación de la información
+## 1.3. Codificación de la información
 
-Como se indicaba [al principio de este tema](#intro), el ordenador sólo maneja datos en **binario**.
+Como se indicaba [al principio de este tema](#1-introducción), el ordenador sólo maneja datos en **binario**.
 
 Tanto el binario (usado por los ordenadores) como el decimal (usado por los humanos) son **sistemas posicionales de numeración**.
 
 Estos sistemas se componen de:
-- Un conjunto de **símbolos** (números en este caso).
+- Un conjunto de **símbolos** (números en este caso). El número de símbolos del sistema es su **base**.
 - Una serie de **reglas** para combinarlos.
 - En esas combinaciones de números, la **posición** de cada uno repercute en su valor.
 
-**Sistemas posicionales**<br>En el sistema decimal, que usa los símbolos {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, si tenemos los números 1 y 3 no es lo mismo crear el número 31 que el 13. La posición de cada símbolo define el valor del número.
+**Sistemas posicionales**<br>En el sistema decimal (base 10), que usa los símbolos {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, si tenemos los dígitos 1 y 3 podemos crear los números 31 y 13. Así se puede entender que la posición de cada símbolo define el valor del número.
 {: .notice--primary}
 
 Veamos a continuación los sistemas de numeración que suelen utilizarse en informática.
 
-### Sistema binario
-Usa un conjunto de dos símbolos: {0, 1}
+### 1.3.1. Sistema binario
+Usa un conjunto de dos símbolos (base 2): {0, 1}
 
 A priori parece un sistema con pocas opciones, pero sólo con esos dos dígitos se pueden representar los mismos números que hacemos los humanos con el sistema decimal.
 
@@ -148,7 +148,7 @@ Si queremos comprobar cómo maneja el ordenador los números que usamos los huma
 
 De esa forma podemos comprobar que **19** es equivalente a **10011**.
 
-### Sistemas intermedios
+### 1.3.2. Sistemas intermedios
 
 Si se observan los ejemplos anteriores, la base influye en la cantidad de dígitos necesarios para representar un número.
 
@@ -156,13 +156,13 @@ Así, si el número 19 sólo requiere 2 dígitos (el 1 y el 9) para representar 
 
 Por eso se idearon sistemas de numeración intermedios que permiten la representación del mismo dato con un número diferente de dígitos. Estos sistemas eran el **octal** y el **hexadecimal** (que veremos en el siguiente apartado).determina la  la reducida base (nº de símbolos) del binario hace necesarios más dígitos  has observado 
 
-#### Octal
-El octal usal el conjunto de símbolos {0, 1, 2, 3, 4, 5, 6, 7}. Por eso se conoce como octal: **8 símbolos en total**.
+#### 1.3.2.1. Octal
+El octal usal el conjunto de símbolos {0, 1, 2, 3, 4, 5, 6, 7}. Es decir, es de **base 8**. Por eso se conoce como octal: **8 símbolos en total**.
 
 La conversión de octal a decimal y biceversa se consigue de la misma forma que en binario, pero usando los 8 símbolos y el 8 como base para las potencias y las divisiones.
 
-#### Hexadecimal (hex)
-El hexadecimal usa 16 símbolos: {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
+#### 1.3.2.2. Hexadecimal (hex)
+El hexadecimal usa 16 símbolos (base 16): {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
 
 Se usan letras ya que en nuestro sistema decimal no existen más símbolos, pero se puede intuir que:
 - A = 10
@@ -205,15 +205,12 @@ Para ver todos los sistemas de un vistazo, aquí tienes una tabla de equivalenci
 **Ejercicio propuesto**<br> Convierte a decimal los siguientes hex: 4A, FF y 11.
 {: .notice--primary}
 
-### Código ASCII
+### 1.4. Código ASCII
 Efectivamente, también las letras pueden representarse en el sistema binario.
 
 Para ello se creó el **[código ASCII](https://es.wikipedia.org/wiki/ASCII){:target="_blank"}**, que se basa en una tabla de equivalencia donde cada letra usa 8 bits para representarla.
 
 Así, la letra **A** se representa con el binario 01000001 (65 en decimal) mientras que la **a** equivale a 01100001.
-
-
-## Unidades de medida
 
 ---
 

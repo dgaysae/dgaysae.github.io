@@ -18,21 +18,21 @@ feature_row:
     excerpt: "Todos los contenidos básicos establecidos para el módulo de Programación del primer curso de DAM o DAW los encontrarás aquí."
     url: "/mod_prog/about/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "Acceder"
   - image_path: /assets/images/Gemini_Generated_Image_tc6wfytc6wfytc6w.jpeg
     alt: "Programación de Servicios y Procesos (2º DAM)"
     title: "PSP"
     excerpt: "En **Programación de Servicios y Procesos** (2º DAM) aprenderás a lanzar procesos e hilos, sincronizarlos, etc."
     url: "/mod_psp/intro/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "Acceder"
   - image_path: /assets/images/Gemini_Generated_Image_PMDM.jpeg
     alt: "PMDM"
     title: "PMDM"
     excerpt: "**Programación Multimedia y Dispositivos Móviles** (2º DAM) te introducirá en el mundo del desarrollo en dispositivos móviles."
     url: "/mod_pmdm/intro/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "Acceder"
 ---
 
 {% include feature_row %}
