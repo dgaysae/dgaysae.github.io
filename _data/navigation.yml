@@ -20,9 +20,6 @@ main:
 
 # programacion links
 mod_prog:
-  - title: "Programación"
-    url: /mod_prog/about/
-
   - title: "Normativa"
     children:
       - title: "Introducción"
@@ -37,6 +34,8 @@ mod_prog:
         url: /mod_prog/about_modulo/
       - title: "Bibliografía y fuentes"
         url: /mod_prog/fuentes_normativa/
+  - title: "Bibliografía"
+    url: /mod_prog/prog_bibliografia/
   - title: "Contenido"
   - title: "UD 01 - Introducción"
     children:

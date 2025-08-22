@@ -40,12 +40,12 @@ public class Main {
 El flujo de ejecución sería algo así:
 
 {% capture fig_img00 %}
-![Ejecución secuencial de instrucciones]({{ '/assets/images/ud01/ud01_figura_08_monoproceso.png' | relative_url }})
+![Ejecución secuencial de instrucciones]({{ '/assets/images/psp/ud01/ud01_figura_08_monoproceso.png' | relative_url }})
 {% endcapture %}
 
 <figure>
   {{ fig_img00 | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>En la ejecución secuencial de tareas el .</figcaption>
+  <figcaption>Ejecución secuencial de tareas.</figcaption>
 </figure>
 
 Para entenderlo mejor imaginemos un restaurante donde trabaja solamente una persona. Esa persona debe: atender al teléfono, gestionar las reservas, limpiar y dejar listas las mesas, acomodar a los clientes que llegan, tomarles nota, cocinar los platos que han pedido, servirlos, etc.
@@ -124,7 +124,7 @@ La CPU puede ejecutar sólo un proceso en cada instante, por lo que el SO repart
 Para indicar qué proceso se va a ejecutar en cada momento, el procesador usa el registro **contador de programa** (CP), que apunta a la dirección de memoria correspondiente:
 
 {% capture fig_img01 %}
-![Contador de programa]({{ '/assets/images/ud01/ud01_figura_01_contador_de_programa.png' | relative_url }})
+![Contador de programa]({{ '/assets/images/psp/ud01/ud01_figura_01_contador_de_programa.png' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -159,7 +159,7 @@ El SO implementa el modelo de procesos mediante una tabla de procesos. Cada entr
 Un proceso puede dividir su trabajo en varios subprocesos llamados **hilos** o **_threads_**, que comparten los recursos y el espacio de direcciones del proceso, aunque cada hilo es un flujo de ejecución independiente que tiene su propio **CP**, **registros** y **pila**:
 
 {% capture fig_img02 %}
-![Hilos]({{ '/assets/images/ud01/ud01_figura_02_hilos.png' | relative_url }})
+![Hilos]({{ '/assets/images/psp/ud01/ud01_figura_02_hilos.png' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -186,7 +186,7 @@ Si comparamos procesos e hilos:
 Cuando se crea un proceso, éste ocupa un espacio en memoria hasta que finaliza. Durante su tiempo de vida, puede pasar por varios estados:
 
 {% capture fig_img03 %}
-![Ciclo de vida de un proceso]({{ '/assets/images/ud01/ud01_figura_03_estados_proceso.png' | relative_url }})
+![Ciclo de vida de un proceso]({{ '/assets/images/psp/ud01/ud01_figura_03_estados_proceso.png' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -234,7 +234,7 @@ Los procesos se pueden comunicar de 2 formas:
 - **Memoria compartida**: la información compartida se ubica en un área de memoria común (buffer) que es accesible por todos los procesos involucrados en la IPC:
 
 {% capture fig_img04 %}
-![Comunicación entre procesos - Memoria compartida]({{ '/assets/images/ud01/ud01_figura_04_memoria_compartida.png' | relative_url }})
+![Comunicación entre procesos - Memoria compartida]({{ '/assets/images/psp/ud01/ud01_figura_04_memoria_compartida.png' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -245,7 +245,7 @@ Los procesos se pueden comunicar de 2 formas:
 - **Paso de mensajes**: un mensaje es un bloque de información creado por un proceso emisor y que tiene sentido para el proceso receptor. Los mensajes no se envían directamente al receptor. Se depositan en una cola de mensajes o buzón que leerán los procesos receptores para recuperar la información:
 
 {% capture fig_img05 %}
-![Comunicación entre procesos - Paso de mensajes]({{ '/assets/images/ud01/ud01_figura_05_paso_mensajes.png' | relative_url }})
+![Comunicación entre procesos - Paso de mensajes]({{ '/assets/images/psp/ud01/ud01_figura_05_paso_mensajes.png' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -266,7 +266,7 @@ Esta situación se conoce como **condición de carrera** y la parte del programa
 Para evitar esta situación se usa la [**exclusión mutua**](#exclusion_mutua) que asegura el acceso de **un único proceso a la vez a una sección crítica**, bloqueando al resto:
 
 {% capture fig_img06 %}
-![Exclusión mútua]({{ '/assets/images/ud01/ud01_figura_06_exclusion_mutua.png' | relative_url }})
+![Exclusión mútua]({{ '/assets/images/psp/ud01/ud01_figura_06_exclusion_mutua.png' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -389,7 +389,7 @@ Los casos anteriores utilizan una cola cuya gestión depende del algoritmo. Pero
 Cada proceso se asigna a una de las colas en base a los datos de su PCB. Las colas se ordenan por prioridad y cada una puede usar un algoritmo de planificación diferente según sus necesidades.
 
 {% capture fig_img07 %}
-![Colas multinivel]({{ '/assets/images/ud01/ud01_figura_09_mlq.png' | relative_url }})
+![Colas multinivel]({{ '/assets/images/psp/ud01/ud01_figura_09_mlq.png' | relative_url }})
 {% endcapture %}
 
 <figure>
