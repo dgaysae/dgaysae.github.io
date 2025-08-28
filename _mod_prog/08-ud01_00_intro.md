@@ -325,19 +325,67 @@ Generalmente, el ordenador ejecuta ese código de la misma forma que nosotros le
 
 Desde los primeros pasos en la programación, eso no siempre era así (como veremos en unidades posteriores). Existen bucles, que repiten varias veces un mismo bloque de instrucciones, o instrucciones que (según unas determinadas condiciones) evitan (condicionales) su ejecución o saltan (instrucción GOTO) a otra parte del código.
 
-Esto suena a caótico y desordenado... Y más aún cuando el programa crece, el número de líneas de código es ingente y resulta difícil de leer, arreglar y mantener[^3]. Y fue esta la causa de la crisis del software de los años 70[^4]. 
+Esto suena a código caótico... ¡Y lo es! Y más aún cuando el programa crece, el número de líneas de código es ingente y resulta difícil de leer, arreglar y mantener[^3]. Esta fue la causa de la crisis del software de los años 70[^4] que mencionamos anteriormente.
 
-[Edsger Dijkstra](https://es.wikipedia.org/wiki/Edsger_Dijkstra){:target="_blank"} lo advirtión en su carta "*GoTo Statement Considered Harmful*"[^5] 
+[Edsger W. Dijkstra](https://es.wikipedia.org/wiki/Edsger_Dijkstra){:target="_blank"} lo advirtió en su carta "*GoTo Statement Considered Harmful*"[^5] que publicó en 1968 en la revista "*Communications of the ACM*".
 
+Veamos los tipos de programación que surgieron a partir de esta crisis.
+
+Estos paradigmas o estilos de programación no son excluyentes. Esto es, un paradigma puede usar los principios de otro/s.
+{: .notice--info}
+
+## 3.1. Programación estructurada
+El mismo Edsger W. Dijkstra propuso un paradigma que ofrecía los mecanismos para crear un código más organizado: la **programación estructurada**.
+
+Se base en tres tipos de **estructuras básicas de control**: **secuencial**, **alternativa** e **iterativa**.
+
+Dichas estructuras se han preservado hasta nuestros días y las estudiaremos en las siguientes unidades.
+
+## 3.2. Programación modular
+Consiste en dividir un programa complejo en varios subprogramas más sencillos que pueden interactuar entre sí. Cada subprograma es un **módulo** y son independientes del resto. Es decir, un módulo no debe interferir en otro/s módulo/s pero sí deben cooperar en la resolución del problema principal.
+
+Un módulo es un subprograma, por lo que hace el papel de un programa. Es decir, puede tener: una **sección de declaraciones** (variables, constantes, funciones, procedimientos, etc…), unos **datos de entrada** sobre los que realizar operaciones y **datos de salida**, que pueden usarse como entrada de otro módulo o bien contribuir directamente a la salida final del programa. Esto permite que el módulo sea **totalmente independiente** del programa principal.
+
+Cada módulo del programa debe tener claramente definidos su **finalidad**, los **límites** de su funcionalidad y una **interfaz** lo más sencilla posible que permita interactuar con él. De esta forma se consigue su **independencia funcional**, que se mide mediante dos parámetros:
+
+- **Cohesión**: tiene que ver con que cada módulo se refiera a un único proceso o entidad. La cohesión es el grado de relación entre los elementos del módulo, de forma que estén bien definidos y alineados con la finalidad o tarea que debe realizar. La **cohesión es alta** cuando cada módulo realiza una única tarea trabajando sobre una sola estructura de datos.
+- **Acoplamiento**: indica el **nivel de dependencia** entre los módulos, es decir, hasta qué punto un módulo necesita de otros para poder funcionar.
+
+  Dos módulos están **desacoplados** cuando no se necesitan el uno al otro para hacer su trabajo. Pero esta situación es casi inalcanzable en casi cualquier proyecto de desarrollo. Por tanto, lo deseable es que un módulo tenga un acoplamiento bajo, ya que así se evita el **efecto onda** o **propagación**, donde un fallo en un módulo se propagaría al resto de módulos acoplados.
+
+## 3.3. Programación orientada a objetos
+La POO es una evolución de la modular, cambiando por completo las estructuras lógicas. Es el paradigma más extendido en la actualidad (prácticamente no hay lenguaje de programación que no lo incluya o adapte).
+
+La principal diferencia con la programación estructurada es que la POO considera que tanto los datos como las operaciones sobre ellos están **totalmente interconectados**, por lo que deben encapsularse en un objeto:
+
+{% capture fig_img04 %}
+![De binario a decimal]({{ '/assets/images/prog/ud01/ud01_prog_05_poo.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img04 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Comparativa entre prog. estructurada y POO sobre la relación de los datos y las operaciones que se realizan con ellos.</figcaption>
+</figure>
+
+En el ejemplo anterior, tanto los datos de una persona (nombre y edad) y las funciones que se pueden realizar sobre dichos datos (comprobar mayoría de edad) **se encapsulan en un objeto** Persona.
+
+Todos estos conceptos se entenderá en unidades posteriores.
+
+## 3.4. Otros paradigmas
+Tras la POO surgieron otros paradigmas[^6]: programación declarativa, AOP, programación funcional, programación lógica, etc.
+
+No te preocupes. Aunque nos vamos a centrar en OOP vamos a sentar las bases para que puedas abordar otros paradigmas por tu cuenta con facilidad.
 
 *[POO]: Programación Orientada a Objetos
 *[OOP]: Object-Oriented Programming
+*[AOP]: Aspect-oriented programming
 
 [^1]: Módulos JavaScript. (s/f). **_MDN Web Docs_**. Recuperado el 22 de agosto de 2025, de <https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Modules>{:target="_blank"}
 [^2]: Atlassian. (s/f). **_Los distintos tipos de pruebas en software_**. Atlassian. Recuperado el 26 de agosto de 2025, de <https://www.atlassian.com/es/continuous-delivery/software-testing/types-of-software-testing>{:target="_blank"}
 [^3]: esto se conoce como **código _spaghetti_**.
 [^4]: Wikipedia contributors. (s/f). **_Crisis del software_**. Wikipedia, The Free Encyclopedia. <https://es.wikipedia.org/w/index.php?title=Crisis_del_software&oldid=164378777>{:target="_blank"}
 [^5]: Wikipedia contributors. (2025, julio 28). **_Considered harmful_**. Wikipedia, The Free Encyclopedia. <https://en.wikipedia.org/w/index.php?title=Considered_harmful&oldid=1303063020>{:target="_blank"}
+[^6]: Bustos, J. L. (2022, August 18). **_Paradigmas de programación: Guía completa 2025_**. KeepCoding Bootcamps. <https://keepcoding.io/blog/paradigmas-de-programacion/>{:target="_blank"}
 
 
 
