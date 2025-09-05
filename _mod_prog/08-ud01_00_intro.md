@@ -325,7 +325,7 @@ Generalmente, el ordenador ejecuta ese código de la misma forma que nosotros le
 
 Desde los primeros pasos en la programación, eso no siempre era así (como veremos en unidades posteriores). Existen bucles, que repiten varias veces un mismo bloque de instrucciones, o instrucciones que (según unas determinadas condiciones) evitan (condicionales) su ejecución o saltan (instrucción GOTO) a otra parte del código.
 
-Esto suena a caótico y desordenado... Y más aún cuando el programa crece, el número de líneas de código es ingente y resulta difícil de leer, arreglar y mantener[^3]. Y fue esta la causa de la crisis del software de los años 70[^4].
+Esto suena a caótico y desordenado... Y más aún cuando el programa crece, el número de líneas de código es ingente y resulta difícil de leer, arreglar y mantener[^3]. Y fue esta la causa de la crisis del software de los años 70[^4]. 
 
 {% capture fig_img04 %}
 ![El código previo a la crisis de los 70 era un caos - Generada con Gemini]({{ '/assets/images/prog/ud01/ud01_prog_04_codigo_pre_crisis_70.png' | relative_url }})
@@ -341,12 +341,13 @@ Esto suena a caótico y desordenado... Y más aún cuando el programa crece, el 
 
 *[POO]: Programación Orientada a Objetos
 *[OOP]: Object-Oriented Programming
+*[AOP]: Aspect-oriented programming
 
 [^1]: Módulos JavaScript. (s/f). **_MDN Web Docs_**. Recuperado el 22 de agosto de 2025, de <https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Modules>{:target="_blank"}
 [^2]: Atlassian. (s/f). **_Los distintos tipos de pruebas en software_**. Atlassian. Recuperado el 26 de agosto de 2025, de <https://www.atlassian.com/es/continuous-delivery/software-testing/types-of-software-testing>{:target="_blank"}
 [^3]: esto se conoce como **código _spaghetti_**.
 [^4]: Wikipedia contributors. (s/f). **_Crisis del software_**. Wikipedia, The Free Encyclopedia. <https://es.wikipedia.org/w/index.php?title=Crisis_del_software&oldid=164378777>{:target="_blank"}
-[^5]: Wikipedia contributors. (2025, julio 28). **_Considered harmful_**. Wikipedia, The Free Encyclopedia. <https://en.wikipedia.org/w/index.php?title=Considered_harmful>{:target="_blank"}
+[^5]: Wikipedia contributors. (2025, julio 28). **_Considered harmful_**. Wikipedia, The Free Encyclopedia. <https://en.wikipedia.org/w/index.php?title=Considered_harmful&oldid=1303063020>{:target="_blank"}
 
 
 

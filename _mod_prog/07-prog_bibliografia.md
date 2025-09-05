@@ -11,14 +11,16 @@ toc: true
 
 ---
 
+El contenido se ha basado en el material de © **Alfredo Moreno Vozmediano** 2005 - 2014, que está bajo licencia [Creative Commons Reconocimiento-NoComercial 2.5 España](https://creativecommons.org/licenses/by-nc/2.5/es/){:target="_blank"} <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Reconocimiento" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc-eu.png" alt="NoComercial" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<br>
+Se han realizado modificaciones sobre dicho material.
+{: .notice--info}
+
 A continuación se muestran las distintas fuentes documentales (libros, vídeos, webs y artículos) que se recomiendan para seguir el curso.
 
 # Bibliografía
-Estos contenidos se basan en la obra de **Alfredo Moreno Vozmediano**:
 
-* Moreno Vozmediano, A. (2014). **_Apuntes de programación en Java para 1º DAM/DAW_**. <a href="https://creativecommons.org/licenses/by-nc/2.5/es/" target="_blanck"><img src="/assets/images/Cc_by-nc_euro_icon.svg.png" title="Alfredo Moreno Vozmediano - CC BY-NC 2.5 ES" alt="Alfredo Moreno Vozmediano - CC BY-NC 2.5 ES" width="200"/></a>
-
-Se recomiendan otras lecturas como:
+Se recomiendan las siguientes lecturas como:
 * González, L. J. S. (s/f). **_Aprende Java con Ejercicios: Cinturón Blanco (Volumen 1)_**. Comprar en [Amazon](https://www.amazon.es/dp/B0DT3XMF5C){:target="_blank}.
   * LuisJoseSanchez. (s. f.). **_GitHub - LuisJoseSanchez/aprende-java-con-ejercicios: Ejemplos y soluciones del libro «Aprende Java con Ejercicios»_**. GitHub. <https://github.com/LuisJoseSanchez/aprende-java-con-ejercicios>{:target="_blank}
 
