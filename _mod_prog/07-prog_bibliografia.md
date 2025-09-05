@@ -24,6 +24,7 @@ Se recomiendan otras lecturas como:
 
 # Webgrafía
 
+* makigas. (s/f). **Java**. Makigas.es. Recuperado el 5 de septiembre de 2025, de <https://www.makigas.es/series/java>{:target="_blank"}
 * **The java<sup>TM</sup> tutorials**. (s/f). Oracle.com.<br>Recuperado el 19 de agosto de 2025, de <https://docs.oracle.com/javase/tutorial/index.html>{:target="_blank"}
 * Baeldung.com. (S/f). **_Get Started with Java_**.<br>Recuperado el 19 de agosto de 2025, de <https://www.baeldung.com/get-started-with-java-series>{:target="_blank"}
 * Dev.Java (s/f). **Dev.Java: The Destination for Java Developers**.<br>Recuperado el 19 de agosto de 2025, de <https://dev.java/>{:target="_blank"}
