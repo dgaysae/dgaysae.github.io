@@ -7,7 +7,14 @@ redirect_from:
   - /theme-setup/
 toc: true
 #toc_sticky: true
-#toc_icon: "heart"  
+#toc_icon: "heart"
+---
+
+El contenido se ha basado en el material de © **Alfredo Moreno Vozmediano** 2005 - 2014, que está bajo licencia [Creative Commons Reconocimiento-NoComercial 2.5 España](https://creativecommons.org/licenses/by-nc/2.5/es/){:target="_blank"} <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Reconocimiento" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc-eu.png" alt="NoComercial" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<br>
+Se han realizado modificaciones sobre dicho material.
+{: .notice--info}
+
 ---
 
 # 1. Introducción
@@ -45,7 +52,7 @@ Un algoritmo es un **conjunto ordenado y finito de operaciones** que permiten ha
 </figure>
 
 ### 1.2.1. Carecterísticas
-Un algoritmo **no debe ser ambiguo** en sus resultados, ya que será la base del algoritmo posterior. Para que un algoritmo produzca un resultado en un **tiempo finito**, debe tener las siguientes características:
+Un algoritmo **no debe ser ambiguo** en sus resultados, ya que éstos serán la base del algoritmo posterior. Para que un algoritmo produzca un resultado en un **tiempo finito**, debe tener las siguientes características:
 - **Preciso**: establece el orden en que se realizan los pasos de la operación.
 - **Definido**: si se sigue dos o más veces (con los mismos datos), se obtiene siempre el mismo resultado.
 - **Finito**: hay un número determinado y finito de pasos.
@@ -70,7 +77,8 @@ Tanto el binario (usado por los ordenadores) como el decimal (usado por los huma
 Estos sistemas se componen de:
 - Un conjunto de **símbolos** (números en este caso). El número de símbolos del sistema es su **base**.
 - Una serie de **reglas** para combinarlos.
-- En esas combinaciones de números, la **posición** de cada uno repercute en su valor.
+
+En esas combinaciones de números, la **posición** de cada uno **repercute en su valor**.
 
 **Sistemas posicionales**<br>En el sistema decimal (base 10), que usa los símbolos {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, si tenemos los dígitos 1 y 3 podemos crear los números 31 y 13. Así se puede entender que la posición de cada símbolo define el valor del número.
 {: .notice--primary}
@@ -222,9 +230,9 @@ Un **programador** es aquella persona **capaz de encontrar soluciones** a determ
 Veamos algunos conceptos relacionados con este objetivo.
 
 ## 2.1 Ingeniería del software 
-El término de **ingeniería** aparece en el campo de la informática tras la **crisis del software**[^4]. Hasta entonces se programaba sin seguir metodologías, reglas, paradigmas o normas básicas. Cada cual con algunos conocimientos del funcionamiento de un ordenador podía escribir programas.
+El término de **ingeniería** aparece en el campo de la informática tras la **crisis del software**[^4]. Hasta entonces se programaba sin seguir metodologías, reglas, paradigmas o normas básicas. Cualquiera con algunos conocimientos del funcionamiento de un ordenador podía escribir programas.
 
-Pero el hardware evolucionaba muy deprisa y lor programas debían adaptarse. Y sin reglas a seguir... cada cual *hacía de su capa un sayo* y los programas se hacían más grandes, más difíciles de entender y, por tanto, de reparar y/o mantener.
+Pero el hardware evolucionaba muy deprisa y los programas debían adaptarse. Y sin reglas a seguir... cada cual *hacía de su capa un sayo*. Los programas se hacían más grandes, más difíciles de entender, reparar y mantener.
 
 Esto provocó dicha crisis y la reacción no se hizo esperar. Surge así la **ingeniería del software** para establecer modelos y paradigmas de programación que permitan desarrollar programas siguiendo unas normas de organización.
 
@@ -248,7 +256,7 @@ Existen muchos modelos de ciclos de vida y en su mayoría tienen en común las s
   El **diseño** responde a la pregunta *¿**CÓMO** se resuelve el problema?*
 
   En esta fase se realiza un diseño de la solución al problema planteado en la fase anterior. Un modelo de diseño muy habitual es el de **divide y vencerás** o **top-down** que consiste en dividir el problema principal en subproblemas más sencillos.
-
+  
 {% capture fig_img03 %}
 ![Divide y vencerás]({{ '/assets/images/prog/ud01/ud01_prog_04_top_down.png' | relative_url }})
 {% endcapture %}
@@ -258,7 +266,7 @@ Existen muchos modelos de ciclos de vida y en su mayoría tienen en común las s
   <figcaption>Top-down o "Divide y venderás". </figcaption>
 </figure>
 
-Es en esta fase, una vez definido el CÓMO, donde se decide el **lenguaje de programación** que se va a usar para desarrollar el software ya que se puede sopesar cuál es el que mejor se adapta a las necesidades del proyecto.
+  Es en esta fase, una vez definido el CÓMO, donde se decide el **lenguaje de programación** que se va a usar para desarrollar el software ya que se puede sopesar cuál es el que mejor se adapta a las necesidades del proyecto.
 
 - **Especificación de módulos/clases**.
   <br>
@@ -282,14 +290,14 @@ Es en esta fase, una vez definido el CÓMO, donde se decide el **lenguaje de pro
 
   Los errores básicos son:
 
-  - De **sintaxis**. Son aquellos que ocurren cuando se escribe mal una instrucción y, por tanto, no se reconoce. Estos errores los detecta y subsana el propio programador mientras programa.
-  - 
+  - De **sintaxis**.
+  <br>
+  Son aquellos que ocurren cuando se escribe mal una instrucción y, por tanto, no se reconoce. Estos errores los detecta y subsana el propio programador mientras programa.
+  - De **análisis/diseño**.
+  <br>
+  Más difíciles de detectar ya que no provocan errores notablemente visibles, pero provocan que el programa no devuelva los resultados esperados. Lo más recomendable para detectar estos errores es acudir a un **equipo de pruebas** o **_testers_** que lleven a cabo las baterías de pruebas necesarias.
 
-  Cada programador va realizando las pruebas oportunas conforme va codificando. Así detecta errores de **sintaxis**, que ocurren cuando se escribe mal una instrucción y, por tanto, no se reconoce como expresión válida.
-
-  Pero esto **no es suficiente** ya que los programadores tienen una visión sesgada del funcionamiento de sus programas. Es decir, en muchas ocasiones no se ponen en la piel del usuario que utilizará ese programa. Por eso es conveniente que otras personas (*testers*) realicen baterías de pruebas guiándose en el análisis de requisitos y en diseño propuesto.
-
-  La experiencia y el tiempo han dado pie al despliegue de una ciencia alrededor de las pruebas. Así, podemos encontrar distintos tipos de pruebas[^2]:
+  La experiencia y el tiempo han dado pie a la creación de una ciencia alrededor de las pruebas. Así, podemos encontrar distintos tipos de pruebas[^2]:
   
   - Tests unitarios.
   - Pruebas de integración.
@@ -306,34 +314,139 @@ Es en esta fase, una vez definido el CÓMO, donde se decide el **lenguaje de pro
   - **Correctivo**, para enmendar errores que no se hubieran detectado en la fase de pruebas).
   - **Perfectivo**, para mejorar el rendimiento o añadir más funciones.
   - **Adaptativo**, para adaptar el programa a otros entornos.
-
-
-
+  
 El ciclo de vida es un proceso extenso y que requiere el trabajo en equipo. Por eso durante el curso nos vamos a centrar en la **especificación de clases** y la **codificación**. El resto se estudian en otros módulos.
 {: .notice--info}
  
 ## 2.3 El papel del programador 
-Dentro del proceso del desarrollo de software, el programador tiene una tarea clara y precisa: codificar programas en base a las especificaciones que se le asignan.
+Dentro del proceso del desarrollo de software, el programador tiene una tarea clara y precisa: codificar programas siguiendo las especificaciones que se le asignan.
 
 Generalmente las fases de análisis y diseño suelen ser tarea para otros perfiles, aunque en la vida real el programador "*sirve para un roto y un descosido*". Es decir, que acaba haciendo de todo un poco.
 
-# 3. Estilos/Paradigmas
+# 3. Lenguajes de programación
+Podemos definir un lenguaje de programación como un **conjunto de reglas (sintaxis) bien definidas y símbolos (semántica) que en combinados permiten a los programadores escribir instrucciones detalladas que puedan ser ejecutadas por una computadora**.
+
+Dicho de otro modo: el lenguaje de programación es el código en el que podemos transmitir al ordenador las órdenes de un programa.
+
+Lenguajes de programación hay muchos, cada uno con sus ventajas e inconvenientes. Conviene, por tanto, clasificarlos en categorías. Nosotros haremos dos clasificaciones:
+
+- La primera, atendiendo al **nivel de abstracción** del lenguaje, distinguirá entre lenguajes de **bajo nivel** y de **alto nivel**.
+- La segunda, según el **proceso de traducción** a código máquina, distinguirá entre lenguajes **interpretados**, **compilados** y **ensamblados**.
+
+## 3.1 Lenguajes de alto y bajo nivel 
+El ordenador, como es sabido, solo puede manejar ceros y unos, es decir, código o **lenguaje binario**. Los seres humanos, por el contrario, utilizamos un lenguaje mucho más complejo, con montones de símbolos y reglas sintácticas y semánticas, que denominaremos **lenguaje natural**.
+
+Entre estos dos extremos (lenguaje binario y lenguaje natural) se encuentran los lenguajes de programación. Tienen cierto parecido con el lenguaje natural, pero son mucho más reducidos y estrictos en su sintaxis y semántica, para acercarse a las limitaciones del lenguaje binario. 
+
+Hay lenguajes de programación muy próximos al lenguaje binario: a éstos los llamamos **lenguajes de bajo nivel** de abstracción. Y los hay más próximos al lenguaje natural: son los **lenguajes de alto nivel** de abstracción. 
+
+### Lenguajes de bajo nivel  
+Son los lenguajes más cercanos a la máquina. Los programas directamente escritos en código binario se dice que están en **lenguaje máquina** que, por lo tanto, **_es el lenguaje de más bajo nivel que existe_**.
+
+Las instrucciones del lenguaje máquina realizan **tareas muy sencillas**, como, por ejemplo, sumar dos números, detectar qué tecla se ha pulsado en el teclado o escribir algo en la pantalla del ordenador. Cuando se **combinan adecuadamente muchas de estas instrucciones** sencillas se obtiene un **programa de ordenador** que puede realizar tareas muy complejas. 
+
+A pesar de la simplicidad de las instrucciones del lenguaje máquina, la forma de escribirlas es muy complicada, ya que hay que hacerlo en binario. En los primeros años de la informática los ordenadores se programaban directamente en lenguaje máquina, lo cual convertía la tarea de programar en una verdadera pesadilla.
+
+{% capture fig_img05 %}
+![Código máquina, escrito en código binario]({{ '/assets/images/prog/ud01/ud01_prog_06_CodigoMaquina.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img05 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Código máquina, escrito en código binario.</figcaption>
+</figure>
+
+Por ejemplo, una instrucción para sumar dos números en lenguaje máquina puede tener este aspecto:
+
+110100100101110010100010001001111010010110110
+
+Cuando los ordenadores fueron haciéndose más potentes, pronto se vio que con el lenguaje máquina no se podrían crear programas que aprovechasen esa potencia por la sencilla razón de que era demasiado difícil programar así: no se podía hacer nada demasiado complicado porque el cerebro humano no está “diseñado” para pensar en binario.
+
+Surgió entonces la idea de utilizar el propio ordenador como traductor: ¿por qué no escribir una instrucción como la anterior, que suma dos números, de una forma más parecida al lenguaje humano y que luego un pequeño programa de ordenador se encargue de traducir esa instrucción a su correspondiente ristra de ceros y unos? Así apareció el **lenguaje ensamblador**, cuyas instrucciones son equivalentes a las del lenguaje máquina, pero se escriben con palabras similares a las del lenguaje humano.
+
+{% capture fig_img06 %}
+![Código escrito en lenguaje ensamblador (assembly)]({{ '/assets/images/prog/ud01/ud01_prog_07_ensamblador.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img06 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Código escrito en lenguaje ensamblador (assembly), que debe traducirse a código máquina para ser ejecutado.</figcaption>
+</figure>
+
+Por ejemplo, para sumar dos números, la instrucción en ensamblador puede ser algo como:
+
+```
+ADD D1, D2
+```
+
+Los lenguajes de bajo nivel se caracterizan por ser **dependientes del hardware** de la máquina. Es decir: un programa escrito en lenguaje máquina o en ensamblador para una arquitectura Intel Core i5 no funcionará, por ejemplo, en un iMac o en una tableta con Android a menos que sea modificado sustancialmente. Incluso puede tener serios problemas para funcionar en máquinas de la misma familia pero con el resto del hardware diferente, o con un sistema operativo distinto.
+
+### Lenguajes de alto nivel  
+Siguiendo el razonamiento anterior (utilizar el propio ordenador como traductor), en los años sesenta se empezaron a desarrollar lenguajes cada vez más complejos, en los que **cada instrucción ya no se correspondía exactamente con una instrucción del lenguaje máquina, sino con varias**. Estos son los **lenguajes de alto nivel** o, simplemente, LAN (no confundir con "*red de área local*")
+
+{% capture fig_img07 %}
+![Lenguajes de alto nivel]({{ '/assets/images/prog/ud01/ud01_prog_08_lenguajesAltoNivel.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img07 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Lenguajes de alto nivel, más cercanos al ser humano y menos acoplados al hardware.</figcaption>
+</figure>
+
+Lógicamente, la **traducción** desde un lenguaje de alto nivel a lenguaje máquina es **mucho más compleja** que desde lenguaje ensamblador, por lo que los traductores se han hecho cada vez más complicados.
+
+Una característica muy importante de los lenguajes de alto nivel es que son **independientes del hardware**, lo que implica que los programas desarrollados con estos lenguajes pueden ser ejecutados en ordenadores con hardware totalmente distinto. A esto se le llama **portabilidad**.
+
+Los programas encargados de traducir el código de alto nivel a código máquina se llaman **compiladores** e **intérpretes**. Son programas muy complejos que generan el código binario equivalente al código de alto nivel para una máquina concreta. Por lo tanto, el programa de alto nivel, que es portable de un hardware a otro, debe ser traducido a código máquina en cada tipo de máquina en la que se pretenda ejecutar.
+
+Ejemplos de lenguajes de alto nivel son: [Basic](https://es.wikipedia.org/wiki/BASIC){:target="_blank"}, 
+[Cobol](https://es.wikipedia.org/wiki/COBOL){:target="_blank"}, 
+[Fortran](https://es.wikipedia.org/wiki/Fortran){:target="_blank"}, 
+[Pascal](https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n)){:target="_blank"}, 
+[Ada](https://es.wikipedia.org/wiki/Ada_(lenguaje_de_programaci%C3%B3n)){:target="_blank"}, 
+[Modula-2](https://es.wikipedia.org/wiki/Modula-2){:target="_blank"}, 
+[C](https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)){:target="_blank"}, 
+[C++](https://es.wikipedia.org/wiki/C%2B%2B){:target="_blank"}, 
+ o [Java](https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)){:target="_blank"}. 
+
+### Lenguajes de alto vs. lenguajes de bajo nivel
+En la siguiente tabla se hace una comparación entre los lenguajes de alto y bajo nivel:
+
+| Lenguajes de bajo nivel | Lenguajes de alto nivel |
+| ----    | ---- |
+| **Ventajas** | **Inconvenientes** |
+| Son comprensibles directamente por la máquina (aunque el ensamblador necesita una pequeña  traducción) | Necesitan ser traducidos por medio de complicados  programas (compiladores e intérpretes) |
+| Los programas se ejecutan muy rápidamente (si  están bien escritos, claro) | La traducción automática del código de alto nivel al código máquina siempre genera programas menos  eficientes que si se escribieran directamente en binario |
+| Ocupan menos espacio en memoria  | Ocupan más espacio en memoria |
+| Permiten controlar directamente el hardware,  por lo que son apropiados para la programación  de sistemas  | En general, solo pueden acceder al hardware utilizando el sistema operativo como intermediario. Pero, entonces,  ¿cómo programar el sistema operativo, que necesita  controlar directamente el hardware? |
+| **Inconvenientes** | **Ventajas** |
+| Son completamente dependientes del hardware. Un programa escrito para determinado tipo de  máquina no funcionará en un ordenador con  diferente arquitectura. | Son portables, es decir, independientes del hardware. Un programa escrito en una máquina puede funcionar en  otra con hardware distinto, siempre que se vuelva a  traducir a binario en la máquina nueva. |
+| Incluso los programas más sencillos son largos y  farragosos | Los programas son más sencillos, ya que una sola instrucción puede equivaler a varias instrucciones  binarias. |
+| Los programas son difíciles de escribir, depurar y mantener | Los programas son más fáciles de escribir, depurar y mantener |
+| Es imposible resolver problemas muy complejos  | Es posible, aunque difícil, enfrentarse a problemas muy complejos |
+
+# 4. Estilos/Paradigmas
 Recordemos que un programa de ordenador es un conjunto de instrucciones que el ordenador puede entender y que ejecuta en un determinado orden.
 
-
 Generalmente, el ordenador ejecuta ese código de la misma forma que nosotros leemos un libro. Es decir, el orden de ejecución de las instrucciones es el mismo en el que están escritas.
+
+Pero en sus primeros pasos, los programas no eran tan *ordenados*.
+
+La evolución de los lenguajes de programación desde 
+
+Si es cierto que los lenguajes permitían escribir código más legible, pero cada programador tenía su propio estilo y el código era difícil de mantener (incluso para el propio autor). La falta de unos estándares de programación, los errores de planificación y los largos periodos de desarrollo llevaron a desconfiar del desarrollo de software y de los ordenadores como elementos tecnológicos que ayudas en al ser humano.
 
 Desde los primeros pasos en la programación, eso no siempre era así (como veremos en unidades posteriores). Existen bucles, que repiten varias veces un mismo bloque de instrucciones, o instrucciones que (según unas determinadas condiciones) evitan (condicionales) su ejecución o saltan (instrucción GOTO) a otra parte del código.
 
 Esto suena a caótico y desordenado... Y más aún cuando el programa crece, el número de líneas de código es ingente y resulta difícil de leer, arreglar y mantener[^3]. Y fue esta la causa de la crisis del software de los años 70[^4]. 
 
 {% capture fig_img04 %}
-![El código previo a la crisis de los 70 era un caos - Generada con Gemini]({{ '/assets/images/prog/ud01/ud01_prog_04_codigo_pre_crisis_70.png' | relative_url }})
+![El código previo a la crisis de los 70 era un caos - Imagen generada con Gemini]({{ '/assets/images/prog/ud01/ud01_prog_04_codigo_pre_crisis_70.png' | relative_url }})
 {% endcapture %}
 
 <figure>
   {{ fig_img04 | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>El código previo a la crisis de los 70 era un caos - Generada con Gemini </figcaption>
+  <figcaption>El código previo a la crisis de los 70 era un caos - Imagen generada con Gemini </figcaption>
 </figure>
 
 [Edsger Dijkstra](https://es.wikipedia.org/wiki/Edsger_Dijkstra){:target="_blank"} lo advirtió en su carta "*GoTo Statement Considered Harmful*"[^5] 

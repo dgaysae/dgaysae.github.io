@@ -20,7 +20,7 @@ A continuación se muestran las distintas fuentes documentales (libros, vídeos,
 
 # Bibliografía
 
-Se recomiendan las siguientes lecturas como:
+Se recomiendan las siguientes lecturas:
 * González, L. J. S. (s/f). **_Aprende Java con Ejercicios: Cinturón Blanco (Volumen 1)_**. Comprar en [Amazon](https://www.amazon.es/dp/B0DT3XMF5C){:target="_blank}.
   * LuisJoseSanchez. (s. f.). **_GitHub - LuisJoseSanchez/aprende-java-con-ejercicios: Ejemplos y soluciones del libro «Aprende Java con Ejercicios»_**. GitHub. <https://github.com/LuisJoseSanchez/aprende-java-con-ejercicios>{:target="_blank}
 
