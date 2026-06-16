@@ -38,6 +38,7 @@ mod_prog:
     url: /mod_prog/prog_bibliografia/
   - title: "Contenido"
   - title: "UD 01 - Introducción"
+    url: /mod_prog/ud01_00_intro/
     children:
       - title: "Introducción"
         url: /mod_prog/ud01_00_intro/
