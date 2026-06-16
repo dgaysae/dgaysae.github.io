@@ -28,7 +28,7 @@ Suele usarse la palabra **_módulo_** para referirse al ciclo formativo que cont
 **Módulo**: un módulo hace referencia a una **asignatura** en FP.
 {: .notice--primary}
 
-**Ciclo**: se refiere al periodo de dos años de estudio en cualquiera de las familias de FP. Existen los Ciclos Formativos de Grado Medio (CFGM) y los **Ciclos Formativos de Grado Superior** (CFGS) como son los de **DAM** o **DAW**, cuya consecución otorga el título de **_Técnico Superior_**.
+**Ciclo**: se refiere al periodo de dos años de estudio en cualquiera de las familias de FP. Existen los Ciclos Formativos de Grado Medio (CFGM) y los **Ciclos Formativos de Grado Superior** (CFGS) como son los de **DAM**, **DAW** o **ASIR**, cuya consecución otorga el título de **_Técnico Superior_**.
 {: .notice--primary}
 
 ---

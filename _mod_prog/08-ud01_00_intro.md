@@ -7,7 +7,14 @@ redirect_from:
   - /theme-setup/
 toc: true
 #toc_sticky: true
-#toc_icon: "heart"  
+#toc_icon: "heart"
+---
+
+El contenido se ha basado en el material de © **Alfredo Moreno Vozmediano** 2005 - 2014, que está bajo licencia [Creative Commons Reconocimiento-NoComercial 2.5 España](https://creativecommons.org/licenses/by-nc/2.5/es/){:target="_blank"} <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Reconocimiento" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc-eu.png" alt="NoComercial" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<br>
+Se han realizado modificaciones sobre dicho material.
+{: .notice--info}
+
 ---
 
 
@@ -430,6 +437,12 @@ Recordemos que un programa de ordenador es un conjunto de instrucciones que el o
 
 Generalmente, el ordenador ejecuta ese código de la misma forma que nosotros leemos un libro. Es decir, el orden de ejecución de las instrucciones es el mismo en el que están escritas.
 {: .text-justify}
+
+Pero en sus primeros pasos, los programas no eran tan *ordenados*.
+
+La evolución de los lenguajes de programación desde 
+
+Si es cierto que los lenguajes permitían escribir código más legible, pero cada programador tenía su propio estilo y el código era difícil de mantener (incluso para el propio autor). La falta de unos estándares de programación, los errores de planificación y los largos periodos de desarrollo llevaron a desconfiar del desarrollo de software y de los ordenadores como elementos tecnológicos que ayudas en al ser humano.
 
 Desde los primeros pasos en la programación, eso no siempre era así (como veremos en unidades posteriores). Existen bucles, que repiten varias veces un mismo bloque de instrucciones, o instrucciones que (según unas determinadas condiciones) evitan (condicionales) su ejecución o saltan (instrucción GOTO) a otra parte del código.
 {: .text-justify}
