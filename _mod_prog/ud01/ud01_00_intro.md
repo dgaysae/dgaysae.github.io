@@ -1,0 +1,312 @@
+---
+title: "Unidad 01 - Introducción"
+permalink: /mod_prog/ud01/intro/
+excerpt: "Introducción a la programación. Conceptos fundamentales."
+last_modified_at: 2025-08-08T08:48:05-04:00
+redirect_from:
+  - /theme-setup/
+toc: true
+#toc_sticky: true
+#toc_icon: "heart"
+---
+
+El contenido se ha basado en el material de © **Alfredo Moreno Vozmediano** 2005 - 2014, que está bajo licencia [Creative Commons Reconocimiento-NoComercial 2.5 España](https://creativecommons.org/licenses/by-nc/2.5/es/){:target="_blank"} <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Reconocimiento" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc-eu.png" alt="NoComercial" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<br>
+Se han realizado modificaciones sobre dicho material.
+{: .notice--info}
+
+---
+
+
+En este tema presentamos los conceptos básicos sobre qué es un ordenador, cómo representa internamente la información y cómo la maneja para realizar operaciones y devolvernos los resultados.
+{: .text-justify}
+
+**Nota**<br>Muchos de estos conceptos se verán en otros módulos, así que no te preocupes si algo no queda explicado en detalle o no se profundiza en él.
+{: .notice}
+{: .text-justify}
+
+Con eso en mente, aprenderemos qué herramientas se usan para programar en Java (JDK) y cómo convertir el código en un programa ejecutable (compiladores). Aprenderemos también qué es la máquina virtual de Java (JVM) y su función en la ejecución de programas Java en distintos sistemas.
+{: .text-justify}
+
+Esto servirá para que comencemos a hacer nuestros primeros programas en Java con el JDK y los compilaremos para que la JVM los ejecute.
+{: .text-justify}
+
+Finalmente abordaremos el tema de los tipos de datos *primitivos* de Java, las constantes, las variables, las expresiones y los operadores. Con esto ya tendremos a nuestra disposición los ladrillos básicos con los que, más adelante, poder levantar un edificio.
+{: .text-justify}
+
+# 1. Introducción
+
+Los ordenadores se han hecho para realizar tareas siguiendo un conjunto de instrucciones finitas. Esto es, un **programa**. Por su naturaleza (electrónica) manejan sólo dos posibles valores:
+{: .text-justify}
+
+- **0** cuando no hay señal eléctrica.
+- **1** en caso contrario.
+
+Esta unidad de información, que puede tomar dos posibles valores, se conoce como **bit** (_**bi**nary digi**t**_). El ordenador realiza operaciones manejando bits. Esto lo hace sincronizando sus operaciones y los componentes que las realizan mediante un reloj interno que les envía pulsos. Por eso se dice que el ordenador es una **máquina síncrona**. 
+{: .text-justify}
+
+El ordenador realiza estas tareas cargándolas en la **memoria principal** a la que accede directamente la CPU, tomando las instrucciones a ejecutar y los datos con los que operar.
+{: .text-justify}
+
+## 1.1. Programa
+Estas tareas están definidas en los distintos **programas**. Un programa es un conjunto de instrucciones ordenadas y comprensibles para un ordenador y de datos que pueden usar esas instrucciones, de manera que cuando se ejecutan en el ordenador se obtiene un resultado.
+{: .text-justify}
+
+Cada programa tiene como finalidad resolver un problema realizando alguna tarea concreta:
+{: .text-justify}
+
+ - Calcular las nóminas de una empresa.
+ - Navegar por Internet ([Brave](https://brave.com/es/){:target="_blank"}, [Chrome](https://www.google.com/intl/es_es/chrome/){:target="_blank"}, [Firefox](https://www.firefox.com/es-ES/){:target="_blank"}, [Edge](https://www.microsoft.com/es-es/edge/){:target="_blank"}, etc.).
+ - Enviar correos (Thunderbird, Outlook, etc.).
+
+En general, para que un programa realice su función, debe **comunicarse** de alguna manera **con el exterior** para recibir datos y devolver reusltados.
+{: .text-justify}
+
+Esos datos pueden ser de distinta naturaleza, pero en todos los casos **deben convertirse en datos binarios** para que el ordenador pueda manejarlos.
+{: .text-justify}
+
+## 1.2. Algoritmo
+
+Un algoritmo es un **conjunto ordenado y finito de operaciones** que permiten hallar la solución a un problema. La implementación de algoritmos genera programas que puede ejecutar el ordenador y pueden procesar datos para devolver la solución:
+{: .text-justify}
+
+{% capture fig_img00 %}
+![Algoritmo]({{ '/assets/images/prog/ud01/ud01_prog_01_algoritmo.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img00 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption> </figcaption>
+</figure>
+
+### 1.2.1. Carecterísticas
+
+Un algoritmo **no debe ser ambiguo** en sus resultados, ya que será la base del algoritmo posterior. Para que un algoritmo produzca un resultado en un **tiempo finito**, debe tener las siguientes características:
+{: .text-justify}
+
+ - **Preciso**: establece el orden en que se realizan los pasos de la operación.
+ - **Definido**: si se sigue dos o más veces (con los mismos datos), se obtiene siempre el mismo resultado.
+ - **Finito**: hay un número determinado y finito de pasos.
+ - **Independiente** del lenguaje de programación en el que se codificará posteriormente.
+
+Veamos un ejemplo de algoritmo implementado en lenguaje natural:
+{: .text-justify}
+
+ - Inicio.
+ - Pedir un número N que represente la edad de una persona.
+ - Si N es **mayor o igual a 18**, la persona **ES MAYOR DE EDAD**.
+ - Si N es **menor que 18**, la persona **ES MENOR DE EDAD**.
+ - Fin del programa.
+
+Si te fijas en el algoritmo podrás comprobar que cumple todas las características de un algoritmo.
+{: .text-justify}
+
+## 1.3. Codificación de la información
+
+Como se indicaba [al principio de este tema](#1-introducción), el ordenador sólo maneja datos en **binario**.
+{: .text-justify}
+
+Tanto el binario (usado por los ordenadores) como el decimal (usado por los humanos) son **sistemas posicionales de numeración**.
+{: .text-justify}
+
+Estos sistemas se componen de:
+{: .text-justify}
+
+ - Un conjunto de **símbolos** (números en este caso). El número de símbolos del sistema es su **base**.
+ - Una serie de **reglas** para combinarlos.
+ - En esas combinaciones de números, la **posición** de cada uno repercute en su valor.
+
+**Sistemas posicionales**<br>En el sistema decimal (base 10), que usa los símbolos {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, si tenemos los dígitos 1 y 3 podemos crear los números 31 y 13. Así se puede entender que la posición de cada símbolo define el valor del número.
+{: .notice--primary}
+{: .text-justify}
+
+Veamos a continuación los sistemas de numeración que suelen utilizarse en informática.
+{: .text-justify}
+
+### 1.3.1. Sistema binario
+
+Usa un conjunto de dos símbolos (base 2): {0, 1}
+{: .text-justify}
+
+A priori parece un sistema con pocas opciones, pero sólo con esos dos dígitos se pueden representar los mismos números que hacemos los humanos con el sistema decimal.
+{: .text-justify}
+
+Veámoslo con el siguiente ejemplo:
+{: .text-justify}
+
+| Decimal | Binario  |
+| ----    | ---- |
+| 0 | 0 |
+| 1 | 1 |
+| 2 | 10 |
+| 3 | 11 |
+| 4 | 100 |
+| 5 | 101 |
+| 6 | 110 |
+| 7 | 111 |
+| 8 | 1000 |
+| 9 | 1001 |
+| 10 | 1010 |
+| 11 | 1011 |
+| 12 | 1100 |
+| ... | ... |
+| 19 | 10011 |
+| 20 | 10100 |
+| 21 | 10101 |
+
+Si observas la columna **Decimal** verás que para contar empezamos recorriendo cada símbolo desde el primero (0) hasta el último (9). Para continuar, se añade el símbolo 1 al principio y se vuelve a hacer el mismo recorrido (1**0**, 1**1**, 1**2**...) y así sucesivamente. Al cubrir todos los números posibles de dos dígitos y llegar al último (99), volvemos a añadir un 1 al principio y comenzamos de nuevo el ciclo.
+{: .text-justify}
+
+El sismeta binario hace lo mismo aunque usando sólo dos símbolos (0 y 1). Pero se puede ver que un número entero como el **20** para nosotros puede interpretarlo un ordenador al convertirlo en **10100**. 
+{: .text-justify}
+
+#### De binario a decimal
+
+Para convertir un número binario en su equivalente decimal debemos tener en cuenta lo siguiente:
+{: .text-justify}
+
+ 1. Cada dígito ocupa una posición en el número, empezando por la posición 0 de la derecha e incrementándola dígito a dígito hacia la izquierda.
+ 2. Se multiplica cada dígito binario por 2 (la base o número de símbolos del sistema binario) elevado a la posición del dígito y, por último, se suman todos ellos.
+ 3. El resultado es el número decimal equivalente al número binario inicial.
+
+Observa estos pasos en el siguiente ejemplo:
+{: .text-justify}
+
+{% capture fig_img01 %}
+![De binario a decimal]({{ '/assets/images/prog/ud01/ud01_prog_02_binario.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img01 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Conversión de número binario a decimal.</figcaption>
+</figure>
+
+Al sumar todos ellos:
+{: .text-justify}
+
+`16 + 0 + 0 + 2 + 1 = 19`
+{: .text-center}
+
+Así, el número binario **10011** es equivalente a **19** en decimal.
+{: .text-justify}
+
+#### De decimal a binario
+
+Si queremos comprobar cómo maneja el ordenador los números que usamos los humanos podemos convertir un número decimal en binario siguiente los pasos:
+{: .text-justify}
+
+ 1. Dividir el número decimal y sus sucesivos cocientes entre 2 hasta llegar al último cocinete válido.
+ 2. Comprobarás que tantos los restos de las sucesivas divisiones como el último cociente son binarios (sólo hay ceros y unos). Para componer el número binario equivalente se toma el cociente y los restos en ese orden y se escriben en el orden opuesto para componer el binario.
+
+{% capture fig_img02 %}
+![De decimal a binario]({{ '/assets/images/prog/ud01/ud01_prog_03_binario.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img02 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Conversión de número decimal a binario.</figcaption>
+</figure>
+
+De esa forma podemos comprobar que **19** es equivalente a **10011**.
+{: .text-justify}
+
+### 1.3.2. Sistemas intermedios
+
+Si se observan los ejemplos anteriores, la base influye en la cantidad de dígitos necesarios para representar un número.
+{: .text-justify}
+
+Así, si el número 19 sólo requiere 2 dígitos (el 1 y el 9) para representar dicho número, el sistema binario necesita 5 dígitos (10011). Para números más grandes, el equivalente binario podría resultar inmanejable para las personas ya que la cantidad de dígitos sería demasiado grande.
+{: .text-justify}
+
+Por eso se idearon sistemas de numeración intermedios que permiten la representación del mismo dato con un número diferente de dígitos. Estos sistemas eran el **octal** y el **hexadecimal** (que veremos en el siguiente apartado).determina la  la reducida base (nº de símbolos) del binario hace necesarios más dígitos  has observado 
+{: .text-justify}
+
+#### 1.3.2.1. Octal
+
+El octal usal el conjunto de símbolos {0, 1, 2, 3, 4, 5, 6, 7}. Es decir, es de **base 8**. Por eso se conoce como octal: **8 símbolos en total**.
+{: .text-justify}
+
+La conversión de octal a decimal y biceversa se consigue de la misma forma que en binario, pero usando los 8 símbolos y el 8 como base para las potencias y las divisiones.
+{: .text-justify}
+
+#### 1.3.2.2. Hexadecimal (hex)
+
+El hexadecimal usa 16 símbolos (base 16): {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
+{: .text-justify}
+
+Se usan letras ya que en nuestro sistema decimal no existen más símbolos, pero se puede intuir que:
+{: .text-justify}
+
+ - A = 10
+ - B = 11
+ - C = 12
+ - D = 13
+ - E = 14
+ - F = 15
+
+Para ver todos los sistemas de un vistazo, aquí tienes una tabla de equivalencias de distintos números en todos los sistemas de numeración explicados:
+{: .text-justify}
+
+| Decimal | Binario | Octal | Hex |
+| ----    | ---- | ---- | ---- |
+| 0 | 0000 | 00 | 0 |
+| 1 | 0001 | 01 | 1 |
+| 2 | 0010 | 02 | 2 |
+| 3 | 0011 | 03 | 3 |
+| 4 | 0100 | 04 | 4 |
+| 5 | 0101 | 05 | 5 |
+| 6 | 0110 | 06 | 6 |
+| 7 | 0111 | 07 | 7 |
+| 8 | 1000 | 10 | 8 |
+| 9 | 1001 | 11 | 9 |
+| 10 | 1010 | 12 | A |
+| 11 | 1011 | 13 | B |
+| 12 | 1100 | 14 | C |
+| 13 | 1101 | 15 | D |
+| 14 | 1110 | 16 | E |
+| 15 | 1111 | 17 | F |
+
+**Ejercicio propuesto**<br> Convierte a octal y hex los siguientes decimales: 42, 27 y 111.
+{: .notice--primary}
+{: .text-justify}
+
+**Ejercicio propuesto**<br> Convierte a decimal los siguientes binarios: 1001101, 11100 y 1001001.
+{: .notice--primary}
+{: .text-justify}
+
+**Ejercicio propuesto**<br> Convierte a decimal los siguientes octales: 42, 27 y 111.
+{: .notice--primary}
+{: .text-justify}
+
+**Ejercicio propuesto**<br> Convierte a decimal los siguientes hex: 4A, FF y 11.
+{: .notice--primary}
+
+### 1.4. Código ASCII
+
+Efectivamente, también las letras pueden representarse en el sistema binario.
+{: .text-justify}
+
+Para ello se creó el **[código ASCII](https://es.wikipedia.org/wiki/ASCII){:target="_blank"}**, que se basa en una tabla de equivalencia donde cada letra usa 8 bits para representarla.
+{: .text-justify}
+
+Así, la letra **A** se representa con el binario 01000001 (65 en decimal) mientras que la **a** equivale a 01100001.
+{: .text-justify}
+
+
+*[POO]: Programación Orientada a Objetos
+*[OOP]: Object-Oriented Programming
+*[AOP]: Aspect-oriented programming
+*[JDK]: Java Development Kit
+*[JVM]: Java Virtual Machine
+*[JRE]: Java Runtime Environment
+*[IntelliJ]: IntelliJ IDEA Community Edition
+
+---
+
+El contenido se ha basado en el material de © **Alfredo Moreno Vozmediano** 2005 - 2014, que está bajo licencia [Creative Commons Reconocimiento-NoComercial 2.5 España](https://creativecommons.org/licenses/by-nc/2.5/es/){:target="_blank"} <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Reconocimiento" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc-eu.png" alt="NoComercial" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<br>
+Se han realizado modificaciones sobre dicho material.
+{: .notice--info}
+
+**Licencia:** [Programación, concurrencia y dispositivos móviles.](https://dgaysae.github.io/){:target="_blank"} © 2025 by [Diego Gay Sáez](https://dgaysae.github.io/){:target="_blank"} is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/){:target="_blank"} <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+{: .notice--info}
