@@ -95,17 +95,18 @@ Este código indica si una persona es mayor de edad:
         System.out.println("Eres mayor de edad");
     }
 
-    if (edad <= 0) {   
-        System.out.println("La edad introducida no es correcta");   
-    }   
+    if (edad < 18) {   
+        System.out.println("Eres menor de edad");   
+    }
 }
 ```
 
-Al introducir la edad, la primera instrucción condicional `if (edad >= 18)` comprueba que si la edad es o supera los 18 años. Si es así, ejecuta su bloque de código (las instrucciones que hay entre las llaves `{` y `}`) que en este caso muestra el mensaje `Eres mayor de edad`. Justo después vemos otra condicional `if (edad <= 0)` por si la edad introducida es negativa, en cuyo caso se imprimirá en la pantalla el mensaje pertinente.
+Al introducir la edad, la primera instrucción condicional `if (edad >= 18)` comprueba que si la edad es o supera los 18 años. Si es así, ejecuta su bloque de código (las instrucciones que hay entre las llaves `{` y `}`) que en este caso muestra el mensaje `Eres mayor de edad`. Justo después vemos otra condicional `if (edad <= 18)` que evalúa si es menor de edad, en cuyo caso se imprimirá en la pantalla el mensaje pertinente.
 {: .text-justify}
 
 ### Ejemplo 3  
 El siguiente código calcula el área y el perímetro de un rectángulo usando un condicional simple:
+{: .text-justify}
 
 ```java
 {
@@ -126,17 +127,51 @@ El siguiente código calcula el área y el perímetro de un rectángulo usando u
 ```
 
 Observa que, en la primera instrucción condicional `if ((área > 0) && (altura > 0))` se comprueba que los dos datos sean positivos; en caso de serlo, se procede al cálculo del área y el perímetro mediante las acciones situadas entre { y }. Más abajo hay otra condicional `if ((área <= 0) || (altura <=0))` para el caso de que alguno de los datos sea negativo o cero: en esta ocasión, se imprime en la pantalla un mensaje de error.
+{: .text-justify}
 
 ## 3.2 Condicional doble
 
 La **forma doble** de la instrucción condicional es:
+{: .text-justify}
 
-| if (condicion) {   acciones01  } else {   acciones02 } |  |
-| :---- | :---: |
+```java
+if (condicion) {
+    acciones01 
+}
+else {
+    acciones02
+}
+```
+{% capture fig_img04 %}
+![Estructura condicional doble]({{ '/assets/images/prog/ud03/ud03_04_condicional_doble.png' | relative_url }})
+{% endcapture %}
 
-En esta forma, la instrucción funciona del siguiente modo: si el resultado de la condición es verdadero, entonces se ejecutan las acciones de la primera parte, es decir, las acciones01. Si es falso, se ejecutan las acciones de la parte "else", es decir, las acciones02. 
+<figure style="width: 450px" class="align-center">
+  {{ fig_img04 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Estructura condicional doble.</figcaption>
+</figure>
 
-**Ejemplo** *Podemos reescribir nuestro algoritmo del rectángulo usando una alternativa doble:*
+En esta forma, la instrucción funciona del siguiente modo: si el resultado de la condición es verdadero, entonces se ejecutan las acciones de la primera parte, es decir, las `acciones01`. Si es falso, se ejecutan las acciones de la parte `else`, es decir, las `acciones02`. 
+{: .text-justify}
+
+### Ejemplos  
+Podemos reescribir algunos de los programas anteriores usando una alternativa doble:
+{: .text-justify}
+
+```java
+{
+    int edad;   
+    System.out.println("Introduce tu edad:");
+    edad = Integer.parseInt(System.console.readLine());
+
+    if (edad >= 18) {
+        System.out.println("Eres mayor de edad");
+    }
+    else {   
+        System.out.println("Eres menor de edad");   
+    }
+}
+```
 
 ```java
 {
@@ -156,24 +191,46 @@ En esta forma, la instrucción funciona del siguiente modo: si el resultado de l
 }
 ```
 
-Lo más interesante de este algoritmo es compararlo con el anterior, ya que hace exactamente lo mismo. ¡Siempre hay varias maneras de resolver el mismo problema! Pero esta solución es un poco más sencilla, al ahorrarse la segunda condición, que va implícita en el **else**. 
+Lo más interesante de estos algoritmos es compararlos con sus versiones anteriores, ya que **hacen exactamente lo mismo**. ¡Siempre hay varias maneras de resolver el mismo problema! Pero esta solución es un poco más sencilla, al ahorrarse la segunda condición, que va implícita en el **`else`**. 
+{: .text-justify}
 
-Aquí abajo tienes el mismo algoritmo dibujado en forma de diagrama de flujo:
-
-## 3.3 Condicional múltiple  {#3.3-condicional-múltiple}
+## 3.3 Condicional múltiple
 
 En algunas ocasiones nos encontraremos con **selecciones en las que hay más de dos alternativas** (es decir, en las que no basta con los valores "verdadero" y "falso"). Siempre es posible plasmar estas selecciones complejas usando varias estructuras if-else if-else if-else if... anidadas, es decir, unas dentro de otras, pero, cuando el número de alternativas es grande, esta solución puede plantear grandes problemas de escritura y legibilidad del algoritmo. 
+{: .text-justify}
 
 Sin embargo, hay que dejar clara una cosa: cualquier instrucción condicional múltiple puede ser sustituida por un conjunto de instrucciones condicionales simples y dobles totalmente equivalentes. 
+{: .text-justify}
 
 La **estructura condicional múltiple** sirve, por tanto, para simplificar estos casos de condiciones con muchas alternativas. Su sintaxis general es:
+{: .text-justify}
 
-| switch (expresión) {    valor1: acciones01; break;   valor2: acciones02; break;   valor3: acciones03; break;   ...   valorN: accionesN; break;    default: acciones-default; }  |  |
-| :---- | :---: |
+
+```java
+switch (expresión) { 
+  valor1: acciones01; break;
+  valor2: acciones02; break;
+  valor3: acciones03; break;
+  ...
+  valorN: accionesN; break; 
+  default: acciones-default;
+}
+```
+{% capture fig_img05 %}
+![Estructura condicional múltiple]({{ '/assets/images/prog/ud03/ud03_05_condicional_multiple.png' | relative_url }})
+{% endcapture %}
+
+<figure style="width: 550px" class="align-center">
+  {{ fig_img05 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Estructura condicional múltiple.</figcaption>
+</figure>
 
 Su funcionamiento es el siguiente: se evalúa **expresión**, que en esta ocasión no tiene que ser de tipo lógico, sino que puede ser entero, carácter, etc[^3]. El resultado de **expresión** se compara con cada uno de los valores **valor1, valor2... valorN**. Si coincide con alguno de ellas, se ejecutan únicamente las acciones situadas a la derecha del valor coincidente (**acciones01, acciones02... accionesN**). Si se diera el caso de que ningún valor fuera coincidente, entonces se ejecutan las **acciones-default** ubicadas al final de la estructura. Esta última parte de la estructura no es obligatorio que aparezca. 
+{: .text-justify}
 
-**Ejemplo** *Construyamos un algoritmo que escriba los nombres de los días de la semana en función del valor de una variable entera llamada "día". Su valor se introducirá por teclado. Los valores posibles de la variable "día" serán del 1 al 7: cualquier otro valor debe producir un error.*
+### Ejemplo 1  
+Construyamos un algoritmo que escriba los nombres de los días de la semana en función del valor de una variable entera llamada "día". Su valor se introducirá por teclado. Los valores posibles de la variable "día" serán del 1 al 7: cualquier otro valor debe producir un error.
+{: .text-justify}
 
 ```java
 {
@@ -207,7 +264,7 @@ Su funcionamiento es el siguiente: se evalúa **expresión**, que en esta ocasi�
 }
 ```
 
-En este programa, la variable **día**, una vez leída, se compara con los siete valores posibles. Si vale 1, se realizará la acción **System.out.println**('lunes'); si vale 2, se realiza **System.out.println**('martes'); y así sucesivamente. Por último, si no coincide con ninguno de los siete valores, se ejecuta la parte **default**. Es conveniente que pienses cómo se podría resolver el mismo problema sin recurrir a la alternativa múltiple, es decir, utilizando sólo alternativas simples y dobles.
+En este programa, la variable **día**, una vez leída, se compara con los siete valores posibles. Si vale 1, se realizará la acción **`System.out.println("lunes");`** si vale 2, se realiza **`System.out.println("martes");`** y así sucesivamente. Por último, si no coincide con ninguno de los siete valores, se ejecuta la parte **`default`**. Es conveniente que pienses cómo se podría resolver el mismo problema sin recurrir a la alternativa múltiple, es decir, utilizando sólo alternativas simples y dobles.
 {: .text-justify}
 
 *[POO]: Programación Orientada a Objetos
