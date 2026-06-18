@@ -1,7 +1,7 @@
 ---
-title: "Ud. 03 - Programación estructurada"
-permalink: /mod_prog/ud03/prog_estructurada/
-excerpt: "Estructuras condicionales, repetitivas y secuenciales propias de cualquier lenguaje de programación. En este caso, para Java."
+title: "Ud. 03 - Estructura secuencial"
+permalink: /mod_prog/ud03/secuencial/
+excerpt: "La estructuras secuencial es la más simple de todas: una instrucción se ejecuta cuando la anterior haya terminado de ejecutarse."
 last_modified_at: 2025-08-08T08:48:05-04:00
 redirect_from:
   - /theme-setup/
@@ -18,35 +18,56 @@ Se han realizado modificaciones sobre dicho material.
 
 ---
 
-# 1 La programación estructurada
+# 2 Estructura secuencial
 
-El término *programación estructurada* se refiere a un conjunto de técnicas que han ido evolucionando desde los primeros trabajos del holandés E. Dijkstra[^1]. Estas técnicas aumentan la productividad del programador, reduciendo el tiempo requerido para escribir, verificar, depurar y mantener los programas. 
+La estructura secuencial es aquélla en la que **una acción sigue a otra** (en secuencia). Esta es la estructura algorítmica básica, en la que las instrucciones se ejecutan una tras otra, en el mismo orden en el que fueron escritas.
 {: .text-justify}
 
-Allá por mayo de 1966, Böhm y Jacopini[^2] demostraron que se puede escribir cualquier ***programa propio*** utilizando solo **tres tipos de estructuras de control**: la secuencial, la selectiva (o condicional) y la repetitiva. A esto se le llama *Teorema de la programación estructurada*, y define un *programa propio* como un programa que cumple tres características: 
+La estructura secuencial, por lo tanto, es la más simple de las tres estructuras permitidas. A continuación vemos su representación mediante diagrama de flujo y Java:
 {: .text-justify}
 
-* *Posee un sólo punto de inicio y un sólo punto de fin* 
-{: .text-justify}
-* *Existe al menos un camino que parte del inicio y llega hasta el fin pasando por todas las partes del programa* 
-{: .text-justify}
-* *No existen bucles infinitos* 
-{: .text-justify}
+```java
+{ 
+    acción 1 
+    acción 2 
+    ...  
+    acción N 
+}
+```
 
-Realmente, el trabajo de Dijkstra basado en este teorema fue revolucionario, porque lo que venía a decir es que, para construir programas más potentes y en menos tiempo, lo que había que hacer era simplificar las herramientas que se utilizaban para hacerlos, en lugar de complicarlas más. Este regreso a la simplicidad, unido a las técnicas de ingeniería del software, acabó con la crisis del software de los años 70\. 
-{: .text-justify}
+{% capture fig_img01 %}
+![Estructura secuencial]({{ '/assets/images/prog/ud03/ud03_02_secuencial.png' | relative_url }})
+{% endcapture %}
 
-Por lo tanto, **los programas estructurados deben limitarse a usar tres estructuras**:
-{: .text-justify}
+<figure style="width: 150px" class="align-center">
+  {{ fig_img01 | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Estructura secuencial. Las instrucciones se ejecutan en un orden y una no comienza hasta que la anterior haya terminado.</figcaption>
+</figure>
 
-* ***Secuencial***
+**Ejemplo** *Vamos a escribir un algoritmo completamente secuencial que calcule la suma de dos números, a y b.*
 
-* ***Selectiva (o condicional)*** 
+```java
+// Algoritmo suma 
+{
+    int a, b, suma; 
+    a = Integer.parseInt(
+        System.console().readLine()
+    );
 
-* ***Repetitiva*** 
+    b = Integer.parseInt( 
+       System.console().readLine()
+    );
+    suma = a + b; 
+    System.out.println(suma); 
+}
+```
 
-La programación orientada a objetos, como vimos en el tema 1, es una evolución de la programación estructurada clásica en la que los algoritmos y los datos se encapsulan en clases que más tarde se instancia en objetos que interactúan entre sí. Pero lo que hay dentro de esos algoritmos siguen siendo programas estructurados. Es decir, la OOP es un superconjunto de la programación estructurada clásica, y por eso es pertinente que, en este punto estudiemos esas estructuras detenidamente.
-{: .text-justify}
+Lo que hace este algoritmo es:
+
+1. Leer `a` y `b`
+1. Sumar ambos.
+1. Escribir por pantalla la suma resultante.
+
 
 *[POO]: Programación Orientada a Objetos
 *[OOP]: Object-Oriented Programming

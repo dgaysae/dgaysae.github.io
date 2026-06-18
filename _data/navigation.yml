@@ -65,6 +65,14 @@ mod_prog:
         url: /mod_prog/ud02/paquetes/
       - title: "Apéndice: E/S por consola"
         url: /mod_prog/ud02/apendice/
+  - title: "UD 03 - Estructuras de control. Calidad del software."
+    children:
+      - title: "Programación estructurada"
+        url: /mod_prog/ud03/prog_estructurada/
+      - title: "Estructura secuencial"
+        url: /mod_prog/ud03/secuencial/
+      - title: "Estructura condicional"
+        url: /mod_prog/ud03/condicional/
   #    - title: "Gestión de procesos"
   #      url: /mod_prog/ud01_01_gestion_ps/
 
