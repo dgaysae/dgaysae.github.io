@@ -267,6 +267,7 @@ Construyamos un algoritmo que escriba los nombres de los días de la semana en f
 En este programa, la variable **día**, una vez leída, se compara con los siete valores posibles. Si vale 1, se realizará la acción **`System.out.println("lunes");`** si vale 2, se realiza **`System.out.println("martes");`** y así sucesivamente. Por último, si no coincide con ninguno de los siete valores, se ejecuta la parte **`default`**. Es conveniente que pienses cómo se podría resolver el mismo problema sin recurrir a la alternativa múltiple, es decir, utilizando sólo alternativas simples y dobles.
 {: .text-justify}
 
+
 *[POO]: Programación Orientada a Objetos
 *[OOP]: Object-Oriented Programming
 
