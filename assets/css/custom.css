@@ -1,0 +1,3 @@
+.theme-subtitle, .page__sidebar, .page__content, .archive {
+  max-width: 85% !important;
+}
