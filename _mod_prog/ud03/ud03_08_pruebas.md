@@ -23,18 +23,18 @@ Se han realizado modificaciones sobre dicho material.
 Cuando un programa ha sido escrito, aún queda mucho trabajo: hay que comprobar que funciona como debe. Las pruebas de un programa debería incluir las siguientes comprobaciones: 
 {: .text-justify}
 
-* Verificar que el programa no tiene errores de ejecución.
+* Verificar que el programa **no tiene errores de ejecución**.
 
-* Verificar que el programa hace lo que se esperaba de él.
+* Verificar que el programa **hace lo que se esperaba de él**.
 
-* Verificar que el programa es eficiente, es decir, que no tarda una barbaridad en hacer su tarea.
+* Verificar que el programa **es eficiente**, es decir, que no tarda una barbaridad en hacer su tarea.
 
 El objetivo es construir software de buena calidad. Pero, ¿qué demonios es un programa de "buena calidad"? 
 {: .text-justify}
 
 ## 8.1 La calidad en el software
 
-La calidad no es un concepto fácil de definir. Dice un aforismo que “sólo se nota la existencia de la calidad en un producto cuando está ausente” 
+La calidad no es un concepto fácil de definir. Dice un aforismo que *“sólo se nota la existencia de la calidad en un producto cuando está ausente*” 
 {: .text-justify}
 
 Además, el concepto de calidad en el software es diferente que en otros productos industriales porque:
@@ -57,19 +57,19 @@ Además, el concepto de calidad en el software es diferente que en otros product
 
 Como el concepto de calidad es escurridizo, se suele hablar de los **factores que afectan a la calidad**, y que son, entre otros:
 
-* Facilidad de uso, prueba y mantenimiento. 
+* **Facilidad de uso**, prueba y mantenimiento. 
 
-* Eficiencia: que el sistema trabaje consumiendo la menor cantidad posible de recursos.
+* **Eficiencia**: que el sistema trabaje consumiendo la menor cantidad posible de recursos.
 
-* Fiabilidad: que el sistema no falle al realizar sus funciones. 
+* **Fiabilidad**: que el sistema no falle al realizar sus funciones. 
 
-* Corrección: que el software haga lo que se espera de él. 
+* **Corrección**: que el software haga lo que se espera de él. 
 
-* Flexibilidad: que sea fácil de modificar. 
+* **Flexibilidad**: que sea fácil de modificar. 
 
-* Portabilidad: que sea fácil de migrar a otro entorno. 
+* **Portabilidad**: que sea fácil de migrar a otro entorno. 
 
-* Eficacia: que resuelva todos los problemas de la mejor forma posible. 
+* **Eficacia**: que resuelva todos los problemas de la mejor forma posible. 
 
 Si el software cumple con estos requisitos, se supone que es de “buena calidad”.
 
