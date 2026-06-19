@@ -73,6 +73,16 @@ mod_prog:
         url: /mod_prog/ud03/secuencial/
       - title: "Estructura condicional"
         url: /mod_prog/ud03/condicional/
+      - title: "Estructura repetitiva"
+        url: /mod_prog/ud03/repetitiva/
+      - title: "Instrucciones de salto"
+        url: /mod_prog/ud03/salto/
+      - title: "Reglas de estilo"
+        url: /mod_prog/ud03/estilo/
+      - title: "Control de excepciones"
+        url: /mod_prog/ud03/excepciones/
+      - title: "Pruebas"
+        url: /mod_prog/ud03/pruebas/
   #    - title: "Gestión de procesos"
   #      url: /mod_prog/ud01_01_gestion_ps/
 

@@ -151,7 +151,7 @@ else {
   <figcaption>Estructura condicional doble.</figcaption>
 </figure>
 
-En esta forma, la instrucción funciona del siguiente modo: si el resultado de la condición es verdadero, entonces se ejecutan las acciones de la primera parte, es decir, las `acciones01`. Si es falso, se ejecutan las acciones de la parte `else`, es decir, las `acciones02`. 
+En esta forma, la instrucción funciona del siguiente modo: si el resultado de la **`condición`** es **verdadero**, entonces se ejecutan las acciones de la primera parte, es decir, las **`acciones01`**. Si es **falso**, se ejecutan las acciones de la parte `else`, es decir, las **`acciones02`**. 
 {: .text-justify}
 
 ### Ejemplos  
@@ -225,7 +225,7 @@ switch (expresión) {
   <figcaption>Estructura condicional múltiple.</figcaption>
 </figure>
 
-Su funcionamiento es el siguiente: se evalúa **expresión**, que en esta ocasión no tiene que ser de tipo lógico, sino que puede ser entero, carácter, etc[^3]. El resultado de **expresión** se compara con cada uno de los valores **valor1, valor2... valorN**. Si coincide con alguno de ellas, se ejecutan únicamente las acciones situadas a la derecha del valor coincidente (**acciones01, acciones02... accionesN**). Si se diera el caso de que ningún valor fuera coincidente, entonces se ejecutan las **acciones-default** ubicadas al final de la estructura. Esta última parte de la estructura no es obligatorio que aparezca. 
+Su funcionamiento es el siguiente: se evalúa **expresión**, que en esta ocasión no tiene que ser de tipo lógico, sino que puede ser entero, carácter, etc[^1]. El resultado de **expresión** se compara con cada uno de los valores **valor1, valor2... valorN**. Si coincide con alguno de ellas, se ejecutan únicamente las acciones situadas a la derecha del valor coincidente (**acciones01, acciones02... accionesN**). Si se diera el caso de que ningún valor fuera coincidente, entonces se ejecutan las **acciones-default** ubicadas al final de la estructura. Esta última parte de la estructura no es obligatorio que aparezca. 
 {: .text-justify}
 
 ### Ejemplo 1  
@@ -271,10 +271,7 @@ En este programa, la variable **día**, una vez leída, se compara con los siete
 *[POO]: Programación Orientada a Objetos
 *[OOP]: Object-Oriented Programming
 
-[^1]: Dijkstra, pese a ser físico, se convirtió en uno de los más importantes científicos de la computación hasta su muerte en 2002. Una de sus frases más famosas es: "la pregunta de si un computador puede pensar no es más interesante que la pregunta de si un submarino puede nadar"
-{: .text-justify}
-
-[^2]: BÖHM, C. y JACOPINI, G.; Flow diagrams, turing machines and lenguages only with two formation rules, Communications of the ACM, vol.9, nº 5, pg. 366-371, 1966
+[^1]: Sin embargo, no suele admitirse una expresión de tipo real por motivos en los que ahora no nos vamos a detener. Lo más habitual es que sea de tipo entero.
 {: .text-justify}
 
 ---
