@@ -1,5 +1,5 @@
 ---
-title: "Unidad 01 - Introducción"
+title: "Ud. 01 - Introducción"
 permalink: /mod_prog/ud01/intro/
 excerpt: "Introducción a la programación. Conceptos fundamentales."
 last_modified_at: 2025-08-08T08:48:05-04:00

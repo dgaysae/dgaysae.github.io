@@ -65,7 +65,7 @@ mod_prog:
         url: /mod_prog/ud02/paquetes/
       - title: "Apéndice: E/S por consola"
         url: /mod_prog/ud02/apendice/
-  - title: "UD 03 - Estructuras de control. Calidad del software."
+  - title: "UD 03 - Estructuras de control / Calidad del software"
     children:
       - title: "Programación estructurada"
         url: /mod_prog/ud03/prog_estructurada/
@@ -83,6 +83,14 @@ mod_prog:
         url: /mod_prog/ud03/excepciones/
       - title: "Pruebas"
         url: /mod_prog/ud03/pruebas/
+  - title: "UD 04 - POO. Clases"
+    children:
+      - title: "Introducción"
+        url: /mod_prog/ud04/intro/
+      - title: "Paquetes"
+        url: /mod_prog/ud04/paquetes/
+      - title: "Clases"
+        url: /mod_prog/ud04/clases/
   #    - title: "Gestión de procesos"
   #      url: /mod_prog/ud01_01_gestion_ps/
 
